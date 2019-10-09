@@ -1,0 +1,49 @@
+doctype html
+head
+    base(href="/")
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+
+    link(rel="stylesheet", href="https://use.typekit.net/jty6luf.css")
+    link(rel="stylesheet", href="css/styles.css")
+    title rocafoliort
+
+body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+        a.navbar-brand(href="index.html") 
+            img.mr-4(src="images/sm-logo.png" alt="rocafoliort small logo")
+            | rocafoliort
+
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navibar" aria-controls="navibar" aria-expanded="false" aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+        
+        .collapse.navbar-collapse#navibar
+            ul.navbar-nav.ml-auto
+                each page in ["about", "uiux", "print", "photos"]
+                    li.nav-item
+                        a.nav-link(href=`pages/${page}.html`)= page === "uiux" ? "ui/ux" : page
+
+    main 
+        block main
+            include pages/landing
+
+    footer.container-fluid
+        .row
+            .col-md-6.d-flex.align-items-center
+                | &copy; #{new Date().getFullYear()} rocafoliort
+            .col-lg-6.text-right
+                a(href="http://twitter.com/xoxowanits" target="blank")
+                    i.fa.fa-2x.fa-twitter-square.mr-4
+                a(href="http://instagram.com/joannerocaf" target="blank")
+                    i.fa.fa-2x.fa-instagram.mr-4
+                a(href="http://linkedin.com/in/joannerocaf" target="blank")
+                    i.fa.fa-2x.fa-linkedin.mr-4
+
+
+
+
+        
+        
+
+    script(type="module" src="index.js")

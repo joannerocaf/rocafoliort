@@ -1,0 +1,71 @@
+$euro: europa, sans-serif;
+$input: input-serif, serif;
+
+body {
+    font-family: $euro;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1 {
+    font-family: $input;
+    font-weight: 200;
+    font-style: italic;
+}
+
+h2 {
+    font-family: $input;
+    font-weight: 700;
+    color: $dark-blue;
+    width:100%;
+    text-align: left;
+    border-bottom: 3px solid $mint;
+    line-height:0.1em;
+    margin:10px 0 20px; 
+
+    span {
+        background:#fff;
+        padding-right: 20px;
+        
+    }
+} 
+
+h3 {
+    font-family: $input;
+    font-style: italic;
+    //font-weight: 200;
+    font-size: 1.3em;
+    color: $pink;
+}
+
+
+a {
+    font-weight: 700;
+    color: $gray;
+    
+    
+
+    &:hover {
+        color: $pink;
+        text-decoration: none;
+        
+
+
+    }
+}
+
+p  {
+    a {
+        border-bottom: 5px solid $mint;
+
+        &:hover {
+            border-bottom: 5px solid $blue;
+        }
+    }
+}
+
+
+.bb {
+
+    border-bottom: 5px solid $dark-blue;
+}
