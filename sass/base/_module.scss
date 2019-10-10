@@ -2,11 +2,9 @@
 @import 'typekit';
 @import 'typo';
 
-@include media-breakpoint-up(md) {
-	html,
-	body {
-		height: 100%;
-	}
+html,
+body {
+	height: 100%;
 }
 
 main {
@@ -21,4 +19,5 @@ main {
 	background-color: $white;
 	width: 100%;
 	justify-content: space-around;
+	padding-top: 2.3rem;
 }

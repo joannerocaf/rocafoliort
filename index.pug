@@ -11,29 +11,31 @@ head
 
 body
 	.d-flex(style="min-height:100%;flex-direction:column;")
-		nav.navbar.navbar-expand-lg.navbar-dark.bg-transparent
+		nav.navbar.navbar-dark.navbar-expand-lg
 				a.navbar-brand(href="/")
 						img.mr-4(src="images/sm-logo.png" alt="rocafoliort small logo")
 						| rocafoliort
 
-				button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navibar" aria-controls="navibar" aria-expanded="false" aria-label="Toggle navigation")
-						span.navbar-toggler-icon
+				.d-inline-flex
+					section
+						button.navbar-toggler.mt-2.mb-3(type="button" data-toggle="collapse" data-target="#navibar" aria-controls="navibar" aria-expanded="false" aria-label="Toggle navigation")
+								span.navbar-toggler-icon
 
-				.collapse.navbar-collapse#navibar
-						ul.navbar-nav.ml-auto
-								each page in ["about", "uiux", "print", "photos"]
-										li.nav-item
-												a.nav-link(id=page href=`pages/${page}.html`)= page === "uiux" ? "ui/ux" : page
+						.collapse.navbar-collapse#navibar
+								ul.navbar-nav.ml-auto
+										each page in ["about", "uiux", "print", "photos"]
+												li.nav-item
+														a.nav-link(id=page href=`pages/${page}.html`)= page === "uiux" ? "ui/ux" : page
 
 		main
 			block main
 				include pages/landing
 
 		footer
-				.row
-						.col-md-6.d-flex.align-items-center
+				.row.align-items-center
+						.col.pr-0
 								| &copy; #{new Date().getFullYear()} rocafoliort
-						.col-lg-6.text-right
+						.col.pl-0.text-right
 								a(href="http://twitter.com/xoxowanits" target="blank")
 										i.fa.fa-2x.fa-twitter-square.mr-4
 								a(href="http://instagram.com/joannerocaf" target="blank")

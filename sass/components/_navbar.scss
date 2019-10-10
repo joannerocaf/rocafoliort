@@ -1,11 +1,47 @@
 nav {
+	background-image: url('../../images/hero.png');
 	display: flex;
 	position: sticky !important;
 	position: -webkit-sticky !important;
 	top: 0;
+	z-index: 100;
 
 	a {
 		border-bottom: 0.23rem solid transparent;
+
+		&.border-info {
+			font-weight: 700 !important;
+		}
+	}
+
+	> .d-inline-flex {
+		flex-grow: 1;
+		justify-content: flex-end;
+	}
+
+	@include media-breakpoint-down(sm) {
+		img {
+			width: 69px;
+		}
+
+		.navbar-collapse {
+			position: absolute !important;
+			left: 0;
+			right: 0;
+			padding-top: 0.23rem;
+			background-color: rgba(200, 200, 200, 0.9);
+			text-align: center;
+
+			a {
+				color: black !important;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(xs) {
+		img {
+			width: 46px;
+		}
 	}
 }
 
