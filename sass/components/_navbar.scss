@@ -1,20 +1,25 @@
-.bg-dark {
-    background-image: url('../../images/hero.png');
-    background-size: cover;
+nav {
+	display: flex;
+	position: sticky !important;
+	position: -webkit-sticky !important;
+	top: 0;
+
+	a {
+		border-bottom: 0.23rem solid transparent;
+	}
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    font-family: $input;
-    font-weight: 200;
-    font-style: italic;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    color: white;
-
-} 
+	font-family: $input;
+	font-weight: 200;
+	font-style: italic;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	color: white;
+}
 
 .navbar-brand {
-    font-family: $input;
-    font-weight: 400;
-    font-style: italic;
+	font-family: $input;
+	font-weight: 400;
+	font-style: italic;
 }

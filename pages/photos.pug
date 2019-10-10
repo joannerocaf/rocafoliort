@@ -1,78 +1,70 @@
 extends ../index
 
 block main
-    .container.main-content
-        h2
-            span photography
-        p.mt-5 I take photos for events and shoots.
-
-        
-
-        h3 LUSD Student Life
-        #lusd.carousel.slide.mb-5(data-ride='carousel')
-            .carousel-inner
-                - let l = 1;
-                while l < 14
-                    .carousel-item(class=l === 1 ? "active" : "")
-                        img.d-block.w-100(src=`../images/photos/lusd/${l++}.jpg` alt='LUSD Student Life')
-
-            a.carousel-control-prev(href='#lusd' role='button' data-slide='prev')
-                span.carousel-control-prev-icon(aria-hidden='true')
-                span.sr-only Previous
-            a.carousel-control-next(href='#lusd' role='button' data-slide='next')
-                span.carousel-control-next-icon(aria-hidden='true')
-                span.sr-only Next
-
-        h3 Honors Concert 2019
-        #honors19.carousel.slide.mb-5(data-ride='carousel')
-            .carousel-inner
-                - let i = 1;
-                while i < 14
-                    .carousel-item(class=i === 1 ? "active" : "")
-                        img.d-block.w-100(src=`../images/photos/honors/${i++}.jpg` alt='Honors Concert')
-
-            a.carousel-control-prev(href='#honors19' role='button' data-slide='prev')
-                span.carousel-control-prev-icon(aria-hidden='true')
-                span.sr-only Previous
-            a.carousel-control-next(href='#honors19' role='button' data-slide='next')
-                span.carousel-control-next-icon(aria-hidden='true')
-                span.sr-only Next
-
-        h3 SJCOE Mock Trial
-        #mock.carousel.slide.mb-5(data-ride='carousel')
-            .carousel-inner
-                - let j = 1;
-                while j < 14
-                    .carousel-item(class=j === 1 ? "active" : "")
-                        img.d-block.w-100(src=`../images/photos/mock/${j++}.jpg` alt='Mock Trial')
-
-            a.carousel-control-prev(href='#mock' role='button' data-slide='prev')
-                span.carousel-control-prev-icon(aria-hidden='true')
-                span.sr-only Previous
-            a.carousel-control-next(href='#mock' role='button' data-slide='next')
-                span.carousel-control-next-icon(aria-hidden='true')
-                span.sr-only Next
-
-        h3 SJCOE Tech Summit
-        #tech.carousel.slide.mb-5(data-ride='carousel')
-            .carousel-inner
-                - let t = 1;
-                while t < 14
-                    .carousel-item(class=t === 1 ? "active" : "")
-                        img.d-block.w-100(src=`../images/photos/tech/${t++}.jpg` alt='Mock Trial')
-
-            a.carousel-control-prev(href='#tech' role='button' data-slide='prev')
-                span.carousel-control-prev-icon(aria-hidden='true')
-                span.sr-only Previous
-            a.carousel-control-next(href='#tech' role='button' data-slide='next')
-                span.carousel-control-next-icon(aria-hidden='true')
-                span.sr-only Next
-
-
-        
+	.main-content
+		.container
+			h2
+					span photography
+			p.mt-5 I take photos for events and shoots.
 
 
 
-            
-    
-    
+			h3 LUSD Student Life
+			#lusd.carousel.slide.mb-5(data-ride='carousel')
+					.carousel-inner
+							- let l = 1;
+							while l < 14
+									.carousel-item(class=l === 1 ? "active" : "")
+											img.d-block.w-100(src=`../images/photos/lusd/${l++}.jpg` alt='LUSD Student Life')
+
+					a.carousel-control-prev(href='#lusd' role='button' data-slide='prev')
+							span.carousel-control-prev-icon(aria-hidden='true')
+							span.sr-only Previous
+					a.carousel-control-next(href='#lusd' role='button' data-slide='next')
+							span.carousel-control-next-icon(aria-hidden='true')
+							span.sr-only Next
+
+			h3 Honors Concert 2019
+			#honors19.carousel.slide.mb-5(data-ride='carousel')
+					.carousel-inner
+							- let i = 1;
+							while i < 14
+									.carousel-item(class=i === 1 ? "active" : "")
+											img.d-block.w-100(src=`../images/photos/honors/${i++}.jpg` alt='Honors Concert')
+
+					a.carousel-control-prev(href='#honors19' role='button' data-slide='prev')
+							span.carousel-control-prev-icon(aria-hidden='true')
+							span.sr-only Previous
+					a.carousel-control-next(href='#honors19' role='button' data-slide='next')
+							span.carousel-control-next-icon(aria-hidden='true')
+							span.sr-only Next
+
+			h3 SJCOE Mock Trial
+			#mock.carousel.slide.mb-5(data-ride='carousel')
+					.carousel-inner
+							- let j = 1;
+							while j < 14
+									.carousel-item(class=j === 1 ? "active" : "")
+											img.d-block.w-100(src=`../images/photos/mock/${j++}.jpg` alt='Mock Trial')
+
+					a.carousel-control-prev(href='#mock' role='button' data-slide='prev')
+							span.carousel-control-prev-icon(aria-hidden='true')
+							span.sr-only Previous
+					a.carousel-control-next(href='#mock' role='button' data-slide='next')
+							span.carousel-control-next-icon(aria-hidden='true')
+							span.sr-only Next
+
+			h3 SJCOE Tech Summit
+			#tech.carousel.slide.mb-5(data-ride='carousel')
+					.carousel-inner
+							- let t = 1;
+							while t < 14
+									.carousel-item(class=t === 1 ? "active" : "")
+											img.d-block.w-100(src=`../images/photos/tech/${t++}.jpg` alt='Mock Trial')
+
+					a.carousel-control-prev(href='#tech' role='button' data-slide='prev')
+							span.carousel-control-prev-icon(aria-hidden='true')
+							span.sr-only Previous
+					a.carousel-control-next(href='#tech' role='button' data-slide='next')
+							span.carousel-control-next-icon(aria-hidden='true')
+							span.sr-only Next

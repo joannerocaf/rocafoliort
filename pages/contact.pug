@@ -1,23 +1,21 @@
 extends ../index
 
 block main
-    .container.main-content
-        h2 
-            span contact
-        p.mt-5 Please use this form to send me a message or inquiry about your project!
+	.main-content
+		.container
+			h2
+				span contact
 
-        form(action="")
-            .form-group
-                label(for="name") Your name
-                input#name.form-control(type="text", placeholder="ex. Juan de la Cruz")
-            .form-group
-                label(for="email") Your email
-                input#email.form-control(type="email", placeholder="ex. juandelacruz@email.com")
-            .form-group
-                label(for="message") Your message
-                textarea.form-control#message(name="message" cols="30" rows="10" placeholder="ex. UI/UX design for a new web app; photography for an event at my grandma's")
-            button#send.btn.btn-primary Send Message
-            
-            
-    
-    
+			p.mt-5 Please use this form to send me a message or inquiry about your project!
+
+			form(action="")
+				.form-group
+					label(for="name") Your name
+					input#name.form-control(type="text" placeholder="ex. Juan de la Cruz")
+				.form-group
+					label(for="email") Your email
+					input#email.form-control(type="email" placeholder="ex. juandelacruz@email.com")
+				.form-group
+					label(for="message") Your message
+					textarea.form-control#message(name="message" cols="30" rows="10" placeholder="ex. UI/UX design for a new web app; photography for an event at my grandma's")
+				button#send.btn.btn-primary Send Message

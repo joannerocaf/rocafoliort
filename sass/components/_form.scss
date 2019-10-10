@@ -1,23 +1,22 @@
 label {
-    font-weight: 700;
-    color: $dark-blue;
-
+	font-weight: 700;
+	color: $dark-blue;
 }
 
 .form-control {
-    border-color: $salmon;
-    border-radius: 0;
+	border-color: $salmon;
+	border-radius: 0;
 }
 
 .btn-primary {
-    background-color: $dark-blue;
-    border-radius: 0;
-    border: 0px;
-    padding: 10px 20px;
-    font-weight: 700;
+	background-color: $dark-blue;
+	border-radius: 0;
+	border: 0px;
+	padding: 10px 20px;
+	font-weight: 700;
 
-    &:hover {
-        background-color: $salmon;
-        color: $dark-blue;
-    }
+	&:hover {
+		background-color: $salmon;
+		color: $dark-blue;
+	}
 }

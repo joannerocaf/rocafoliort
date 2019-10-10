@@ -1,16 +1,6 @@
 #hero {
-    height: 100vh;
-    background-image: url('../../images/hero.png');
-    background-position: right;
-    background-size:cover;
-    position: relative;
-
-    h1 {
-        color: white;
-    }
-
-}#hero-content {
-    position: absolute;
-    bottom: 100px;
-    right: 20px;
+	> * {
+		position: absolute;
+		right: 2.3rem;
+	}
 }
