@@ -10,7 +10,7 @@
     "pugc": "pug index.pug pages",
     "sass": "yarn sassc --watch",
 		"sassc": "sass sass/styles.scss style.css",
-    "start": "nodemon --ext js,html,css ./node_modules/local-web-server/bin/cli.js --open"
+    "start": "live-server ."
 	},
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -20,8 +20,7 @@
     "popper.js": "^1.15.0"
   },
   "devDependencies": {
-		"local-web-server": "^3.0.7",
-		"nodemon": "^1.19.3",
+		"live-server": "^1.2.1",
     "pug": "^2.0.4",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.23.0"
