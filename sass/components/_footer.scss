@@ -1,9 +1,10 @@
 footer {
-	background-image: url('../../images/footer-bg.png');
+	//background-image: url('../../images/footer-bg.png');
 	font-size: 2rem;
 	font-family: $input;
 	font-style: italic;
 	padding: 1rem;
+	color: white;
 
 	@include media-breakpoint-down(sm) {
 		font-size: 0.95rem;

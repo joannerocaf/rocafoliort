@@ -1,8 +1,12 @@
 nav {
-	background-image: url('../../images/hero.png');
+	//background-image: url('../../images/hero.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+	//background-size: cover;
 	display: flex;
-	position: sticky !important;
-	position: -webkit-sticky !important;
+	//position: sticky !important;
+	//position: -webkit-sticky !important;
 	top: 0;
 	z-index: 100;
 
@@ -29,11 +33,16 @@ nav {
 			left: 0;
 			right: 0;
 			padding-top: 0.23rem;
-			background-color: rgba(200, 200, 200, 0.9);
+			background-color: $dark-blue;
 			text-align: center;
+			margin-top: 8px;
 
-			a {
+			/* a {
 				color: black !important;
+			} */
+
+			.border-info {
+				border: 0px !important;
 			}
 		}
 	}
@@ -52,10 +61,18 @@ nav {
 	padding-right: 1rem;
 	padding-left: 1rem;
 	color: white;
+
+	&:hover {
+		color: $salmon;
+	}
 }
 
 .navbar-brand {
 	font-family: $input;
 	font-weight: 400;
 	font-style: italic;
+}
+
+.border-info {
+	border-color: $pink !important;
 }

@@ -1,4 +1,4 @@
-doctype html
+html(lang="en")
 head
 		base(href="/")
 		meta(charset='UTF-8')
@@ -11,7 +11,7 @@ head
 
 body
 	.d-flex(style="min-height:100%;flex-direction:column;")
-		nav.navbar.navbar-dark.navbar-expand-lg
+		nav.navbar.navbar-dark.navbar-expand-md
 				a.navbar-brand(href="/")
 						img.mr-4(src="images/sm-logo.png" alt="rocafoliort small logo")
 						| rocafoliort
@@ -34,13 +34,13 @@ body
 		footer
 				.row.align-items-center
 						.col.pr-0
-								| &copy; #{new Date().getFullYear()} rocafoliort
+								| &copy; #{new Date().getFullYear()}
 						.col.pl-0.text-right
-								a(href="http://twitter.com/xoxowanits" target="blank")
-										i.fa.fa-2x.fa-twitter-square.mr-4
-								a(href="http://instagram.com/joannerocaf" target="blank")
+								a(href="http://instagram.com/joannerocaf" target="blank" aria-label="Joanne's Instagram")
 										i.fa.fa-2x.fa-instagram.mr-4
-								a(href="http://linkedin.com/in/joannerocaf" target="blank")
-										i.fa.fa-2x.fa-linkedin.mr-4
+								a(href="http://linkedin.com/in/joannerocaf" target="blank" aria-label="Joanne's LinkedIn")
+										i.fa.fa-2x.fa-linkedin-square.mr-4
+								a(href="http://twitter.com/xoxowanits" target="blank" aria-label="Joanne's Twitter")
+										i.fa.fa-2x.fa-twitter-square.mr-4
 
 		script(type="module" src="browser.js")
