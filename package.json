@@ -1,25 +1,29 @@
 {
   "name": "rocafoliort_site",
+  "private": true,
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
   "scripts": {
+    "build": "sass sass/styles.scss build/style.css && pug index.pug --out build && pug pages --out build/pages",
     "pug": "yarn pugc --watch",
     "pugc": "pug index.pug pages",
     "sass": "yarn sassc --watch",
-    "sassc": "sass sass/styles.scss css/styles.css",
-    "start": "live-server ."
-  },
-  "devDependencies": {
-    "live-server": "^1.2.1",
-    "pug": "^2.0.4",
-    "pug-cli": "^1.0.0-alpha6",
-    "sass": "^1.23.0"
-  },
+		"sassc": "sass sass/styles.scss style.css",
+    "start": "nodemon ./node_modules/local-web-server/bin/cli.js"
+	},
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+		"local-web-server": "^3.0.7",
+		"nodemon": "^1.19.3",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.23.0"
   }
 }
