@@ -1,5 +1,5 @@
 html(lang="en")
-head
+	head
 		base(href="/")
 		meta(charset='UTF-8')
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
@@ -9,41 +9,48 @@ head
 		link(rel="stylesheet" href="style.css")
 		title rocafoliort
 
-body
-	.d-flex(style="min-height:100%;flex-direction:column;")
-		nav.navbar.navbar-dark.navbar-expand-md
+	body
+		.d-flex(style="min-height:100%;flex-direction:column;")
+			nav.navbar.navbar-dark.navbar-expand-md
 				a.navbar-brand(href="/")
-						img.mr-4(src="images/sm-logo.png" alt="rocafoliort small logo")
-						| rocafoliort
+					img.mr-4(src="images/sm-logo.png" alt="rocafoliort small logo")
+					| rocafoliort
 
 				.d-inline-flex
 					section
-						button.navbar-toggler.mt-2.mb-3.pt-2(type="button" data-toggle="collapse" data-target="#navibar" aria-controls="navibar" aria-expanded="false" aria-label="Toggle navigation")
+						button.navbar-toggler.mt-2.mb-3.pt-2(
+							type="button"
+							aria-controls="navibar"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+							data-target="#navibar"
+							data-toggle="collapse"
+						)
 							.d-inline-flex(style="flex-direction:column;")
 								.navbar-hb-one
 								.navbar-hb-two
 								.navbar-hb-three
 
 						.collapse.navbar-collapse#navibar
-								ul.navbar-nav.ml-auto
-										each page in ["about", "uiux", "print", "photos"]
-												li.nav-item
-														a.nav-link(id=page href=`pages/${page}.html`)= page === "uiux" ? "ui/ux" : page
+							ul.navbar-nav.ml-auto
+								each page in ["about", "uiux", "print", "photos"]
+									li.nav-item
+										a.nav-link(id=page href=`pages/${page}.html`)= page === "uiux" ? "ui/ux" : page
 
-		main
-			block main
-				include pages/landing
+			main
+				block main
+					include pages/landing
 
-		footer
+			footer
 				.row.align-items-center
-						.col.pr-0
-								| &copy; #{new Date().getFullYear()}
-						.col.pl-0.text-right
-								a(href="http://instagram.com/joannerocaf" target="blank" aria-label="Joanne's Instagram")
-										i.fa.fa-2x.fa-instagram.mr-4
-								a(href="http://linkedin.com/in/joannerocaf" target="blank" aria-label="Joanne's LinkedIn")
-										i.fa.fa-2x.fa-linkedin-square.mr-4
-								a(href="http://twitter.com/xoxowanits" target="blank" aria-label="Joanne's Twitter")
-										i.fa.fa-2x.fa-twitter-square.mr-4
+					.col.pr-0
+						| &copy; #{new Date().getFullYear()}
+					.col.pl-0.text-right
+						a(href="http://instagram.com/joannerocaf" target="instagram" aria-label="Joanne's Instagram")
+							i.fa.fa-2x.fa-instagram.mr-4
+						a(href="http://linkedin.com/in/joannerocaf" target="linkedin" aria-label="Joanne's LinkedIn")
+							i.fa.fa-2x.fa-linkedin-square.mr-4
+						a(href="http://twitter.com/xoxowanits" target="twitter" aria-label="Joanne's Twitter")
+							i.fa.fa-2x.fa-twitter-square.mr-4
 
-		script(type="module" src="browser.js")
+			script(type="module" src="browser.js")
