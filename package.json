@@ -10,7 +10,7 @@
     "pugc": "pug index.pug pages",
     "sass": "yarn sassc --watch",
 		"sassc": "sass sass/styles.scss style.css",
-    "start": "nodemon ./node_modules/local-web-server/bin/cli.js"
+    "start": "nodemon --ext js,html,css ./node_modules/local-web-server/bin/cli.js --open"
 	},
   "dependencies": {
     "bootstrap": "^4.3.1",
