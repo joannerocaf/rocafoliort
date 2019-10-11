@@ -10,7 +10,7 @@
     "pugc": "pug index.pug pages",
     "sass": "yarn sassc --watch",
 		"sassc": "sass sass/styles.scss style.css",
-    "start": "live-server ."
+    "start": "live-server --host=localhost ."
 	},
   "dependencies": {
     "bootstrap": "^4.3.1",
