@@ -1,0 +1,9 @@
+.npmignore
+license*
+*-lock.json
+*.css
+*.flow
+*.less
+*.map
+*.md
+*.txt
