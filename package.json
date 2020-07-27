@@ -5,7 +5,7 @@
 	"main": "server.js",
 	"license": "MIT",
 	"scripts": {
-		"build": "sass sass/styles.scss build/style.css && pug index.pug --out build && pug pages --out build/pages",
+		"build": "yarn pugc && yarn sassc",
 		"pug": "yarn pugc --watch",
 		"pugc": "pug index.pug pages",
 		"sass": "yarn sassc --watch",
