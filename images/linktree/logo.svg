@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="316" height="181" viewBox="0 0 316 181">
+  <defs>
+    <filter id="rocafort._design" x="0" y="0" width="316" height="181" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.114"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_11" data-name="Group 11" transform="translate(-254.579 -49.104)">
+    <text id="rocafort._design-2" data-name="rocafort.
+design" transform="translate(408.579 118.104)" fill="#77b8e8" font-size="57" font-family="SphereSansRegular, Sphere Sans"><tspan x="-127.011" y="0">rocafort.</tspan><tspan x="-93.39" y="66">design</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 254.58, 49.1)" filter="url(#rocafort._design)">
+      <text id="rocafort._design-3" data-name="rocafort.
+design" transform="translate(158 72)" fill="#fff" font-size="57" font-family="SphereSansRegular, Sphere Sans"><tspan x="-127.011" y="0">rocafort.</tspan><tspan x="-93.39" y="66">design</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+#linktree {
+	font-family: poppins, sans-serif;
+	background: url('../images/linktree/bg.png');
+
+	.header {
+		background-color: #EFEFEF;
+		font-weight: 700;
+
+	}
+
+	.btn-primary {
+		background-color: #ffffff;
+		border-radius: 15px;
+		//height: 70px;
+		text-align: center;
+		font-weight: 500;
+
+	}
+
+	.special {
+		color: #896E90;
+		border: 5px solid #E3C3EB;
+		&:hover {
+			color: white;
+			background-color:#E3C3EB;
+		}
+	}
+
+	.twitter {
+		color: #3984BB;
+		border: 5px solid #CEE4F4;
+		&:hover {
+			background-color:#CEE4F4;
+		}
+	}
+
+	.folio {
+		color: #676767;
+		border: 5px solid #C9C9C9;
+		&:hover {
+			background-color:#C9C9C9;
+		}
+	}
+
+	.folio {
+		color: #676767;
+		border: 5px solid #C9C9C9;
+		&:hover {
+			background-color:#C9C9C9;
+		}
+	}
+
+	.linkedin {
+		color: #F470A8;
+		border: 5px solid #FFD3E6;
+		&:hover {
+			background-color:#FFD3E6;
+		}
+	}
+
+	.insta {
+		color: #ED916D;
+		border: 5px solid #FFE4D9;
+		&:hover {
+			background-color:#FFE4D9;
+		}
+	}
+}
+
+
