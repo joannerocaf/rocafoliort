@@ -35,7 +35,7 @@ html(lang="en")
 							ul.navbar-nav.ml-auto
 								each page in ["about", "uiux", "graphic", "photos"]
 									li.nav-item
-										a.nav-link(id=page href=`pages/${page}.html`)= page === "uiux" ? "ui/ux" : page
+										a.nav-link(id=page href=page)= page === "uiux" ? "ui/ux" : page
 
 			main
 				block main
