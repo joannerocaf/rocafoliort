@@ -10,7 +10,8 @@
 		"pugc": "pug index.pug pages",
 		"sass": "yarn sassc --watch",
 		"sassc": "sass sass/styles.scss style.css",
-		"start": "live-server --host=localhost ."
+		"watch": "onchange -i -k '**/*.js' '**/*.pug' -- yarn start",
+		"start": "node ./server.js"
 	},
 	"dependencies": {
 		"bootstrap": "4.5.2",
@@ -21,7 +22,7 @@
 		"popper.js": "1.16.1"
 	},
 	"devDependencies": {
-		"live-server": "1.2.1",
+		"onchange": "7.0.2",
 		"pug": "3.0.0",
 		"pug-cli": "1.0.0-alpha6",
 		"sass": "1.26.10"
