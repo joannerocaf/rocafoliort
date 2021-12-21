@@ -1,0 +1,28 @@
+html(lang="en")
+	head
+		base(href="/")
+		meta(charset='UTF-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		meta(http-equiv='X-UA-Compatible' content='ie=edge')
+
+		link(rel="stylesheet" href="https://use.typekit.net/jty6luf.css")
+		link(rel="stylesheet" href="style.css")
+		title rocafoliort
+
+	body
+		.d-flex.flex-direction-column.h-100
+			main
+				block main
+					.container-fluid.bg-secondary.h-100.text-light
+						.row.h-100.align-items-center.justify-content-center
+							.col-12.text-center
+								h1.mb-5 Under Construction
+								a(href="//instagram.com/joannerocaf" target="instagram" aria-label="Joanne's Instagram")
+									i.fa.fa-2x.fa-instagram
+								a.mx-4(href="//linkedin.com/in/joannerocaf" target="linkedin" aria-label="Joanne's LinkedIn")
+									i.fa.fa-2x.fa-linkedin
+								a(href="//twitter.com/rocafortjo" target="twitter" aria-label="Joanne's Twitter")
+									i.fa.fa-2x.fa-twitter-square
+								p.mt-3 &copy; #{new Date().getFullYear()}
+
+			script(type="module" src="browser.js")

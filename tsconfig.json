@@ -1,0 +1,10 @@
+{
+	"extends": "@ledge/configs/tsconfig.json",
+	"compilerOptions": {
+		"resolveJsonModule": true
+	},
+	"files": [
+		"public/browser.ts",
+		"public/server.ts"
+	]
+}
