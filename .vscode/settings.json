@@ -1,9 +1,0 @@
-{
-	"files.exclude": {
-		"public/*.css": true,
-		"public/*.map": true,
-		"**/*.html": {
-			"when": "$(basename).pug"
-		}
-	}
-}
