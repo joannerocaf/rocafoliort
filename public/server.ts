@@ -1,3 +1,5 @@
+console.time(`Startup complete after`);
+
 import { dirname, join } from 'path';
 import { URL, fileURLToPath } from 'url';
 
@@ -10,6 +12,7 @@ const PUBLIC_DIR = dirname(fileURLToPath(import.meta.url));
 
 console.log(join(PUBLIC_DIR, '..', 'node_modules'));
 
+const PORT = Number(process.env.PORT ?? 3000);
 express()
 	.set('view engine', 'pug')
 	.set('views', join(PUBLIC_DIR, '..', 'views'))
@@ -36,4 +39,10 @@ express()
 	.get('/photos', (_, res) => res.render('photos'))
 	.get('/uiux', (_, res) => res.render('uiux'))
 	.get('/private', (_req, res) => res.redirect(process.env.PORTFOLIO_URL ?? ''))
-	.listen(process.env.PORT ?? 3000);
+	.listen(PORT, () => {
+		console.timeEnd(`Startup complete after`);
+		console.info(`Now listening on port ${PORT}`);
+		if (process.env.NODE_ENV !== 'production') {
+			console.info(`View website at http://localhost:${PORT}`);
+		}
+	});
