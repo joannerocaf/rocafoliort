@@ -1,0 +1,8 @@
+extends index
+
+block main
+	form.text-center(action="/login" method="post")
+		label.form-label(for="password") Please enter the password
+		input.form-control(id="password" type="password" name="password")
+		input.btn.btn-light.mt-3(type="submit")
+	block footer
