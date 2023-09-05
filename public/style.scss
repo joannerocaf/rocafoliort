@@ -5,14 +5,11 @@ $mint: #79cbca;
 $pink: #e684ae;
 $salmon: #f8c6bf;
 
-$fa-font-path: './font-awesome/fonts';
-
 .mint {
 	color: $mint;
 }
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import '../node_modules/font-awesome/scss/font-awesome.scss';
 
 @font-face {
 	font-family: 'magritte';
