@@ -1,14 +1,14 @@
 import { dirname, join } from 'path';
-import { fileURLToPath, URL } from 'url';
+import { URL, fileURLToPath } from 'url';
 
 import compression from 'compression';
 import express from 'express';
 
-import headers from './headers.json';
+import headers from './headers.json' assert { type: 'json' };
 
 const PUBLIC_DIR = dirname(fileURLToPath(import.meta.url));
 
-console.log(join(PUBLIC_DIR, '..', 'node_modules'))
+console.log(join(PUBLIC_DIR, '..', 'node_modules'));
 
 express()
 	.set('view engine', 'pug')
@@ -17,7 +17,10 @@ express()
 	.use(express.static(PUBLIC_DIR)) // should be the `public` directory of the project
 	.use(express.static(join(PUBLIC_DIR, '..', 'node_modules')))
 	.use((req, res, next) => {
-		if (process.env.NODE_ENV === 'production' && req.hostname.includes('joannerocafort.com') === false) {
+		if (
+			process.env.NODE_ENV === 'production' &&
+			req.hostname.includes('joannerocafort.com') === false
+		) {
 			return res.redirect(new URL(req.url, 'https://joannerocafort.com').href);
 		}
 		res.set(headers);

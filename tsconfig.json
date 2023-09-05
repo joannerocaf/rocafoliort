@@ -1,10 +1,15 @@
 {
-	"extends": "@ledge/configs/tsconfig.json",
 	"compilerOptions": {
-		"resolveJsonModule": true
-	},
-	"files": [
-		"public/browser.ts",
-		"public/server.ts"
-	]
+		"lib": ["es2021"],
+		"target": "es2021",
+		"module": "NodeNext",
+		"esModuleInterop": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"strict": true
+	}
 }
