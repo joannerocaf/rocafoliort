@@ -1,70 +1,89 @@
 extends index
 
 block main
-	.main-content
-		.container
-			h2
-					span photography
-			p.mt-5 Photography and videography have been some of my greatest interests ever since I was a kid. I was always drawn to the idea of reliving memories through photos and videos, so that is what I think about when I go around taking pictures. I'm glad I'm able to do this as a profession.
+	h2.text-center photography
+	p.mb-5 Photography and videography have been some of my greatest interests ever since I was a kid. I was always drawn to the idea of reliving memories through photos and videos, so that is what I think about when I go around taking pictures. I'm glad I'm able to do this as a profession.
 
+	h3 LUSD Student Life
+	#lusd.carousel.slide.mb-5(data-bs-theme="dark")
+		.carousel-indicators
+			- let li = 0;
+			while li < 11
+				button(type="button" class=li === 0 ? "active" : "" data-bs-target="#lusd" data-bs-slide-to=`${li}` aria-label=`LUSD Slide ${li + 1}`)
+				- li++
+		.carousel-inner
+			- let l = 1;
+			while l < 12
+				.carousel-item(class=l === 1 ? "active" : "")
+					img.d-block.w-100(src=`../images/photos/lusd/${l++}.jpg` alt='LUSD Student Life')
 
+			button.carousel-control-prev(type="button" data-bs-target="#lusd" data-bs-slide="prev")
+				span.carousel-control-prev-icon(aria-hidden="true")
+				span.visually-hidden Previous
+			button.carousel-control-next(role="button" data-bs-target="#lusd" data-bs-slide="next")
+				span.carousel-control-next-icon(aria-hidden="true")
+				span.visually-hidden Next
 
-			h3 LUSD Student Life
-			#lusd.carousel.slide.mb-5(data-ride='carousel')
-					.carousel-inner
-							- let l = 1;
-							while l < 12
-									.carousel-item(class=l === 1 ? "active" : "")
-											img.d-block.w-100(src=`../images/photos/lusd/${l++}.jpg` alt='LUSD Student Life')
+	h3 Honors Concert 2019
+	#honors19.carousel.slide.mb-5
+		.carousel-indicators
+			- let ii = 0;
+			while ii < 13
+				button(type="button" class=ii === 0 ? "active" : "" data-bs-target="#lusd" data-bs-slide-to=`${ii}` aria-label=`Honors Slide ${ii + 1}`)
+				- ii++
+		.carousel-inner
+			- let i = 1;
+			while i < 14
+				.carousel-item(class=i === 1 ? "active" : "")
+					img.d-block.w-100(src=`../images/photos/honors/${i++}.jpg` alt='Honors Concert')
 
-					a.carousel-control-prev(href='#lusd' role='button' data-slide='prev')
-							span.carousel-control-prev-icon(aria-hidden='true')
-							span.sr-only Previous
-					a.carousel-control-next(href='#lusd' role='button' data-slide='next')
-							span.carousel-control-next-icon(aria-hidden='true')
-							span.sr-only Next
+		button.carousel-control-prev(type="button" data-bs-target="#honors19" data-bs-slide="prev")
+			span.carousel-control-prev-icon(aria-hidden="true")
+			span.visually-hidden Previous
+		button.carousel-control-next(role="button" data-bs-target="#honors19" data-bs-slide="next")
+			span.carousel-control-next-icon(aria-hidden="true")
+			span.visually-hidden Next
 
-			h3 Honors Concert 2019
-			#honors19.carousel.slide.mb-5(data-ride='carousel')
-					.carousel-inner
-							- let i = 1;
-							while i < 14
-									.carousel-item(class=i === 1 ? "active" : "")
-											img.d-block.w-100(src=`../images/photos/honors/${i++}.jpg` alt='Honors Concert')
+	h3 SJCOE Mock Trial
+	#mock.carousel.slide.mb-5
+		.carousel-indicators
+			- let ji = 0;
+			while ji < 13
+				button(type="button" class=ji === 0 ? "active" : "" data-bs-target="#mock" data-bs-slide-to=`${ji}` aria-label=`Mock Slide ${ji + 1}`)
+				- ji++
 
-					a.carousel-control-prev(href='#honors19' role='button' data-slide='prev')
-							span.carousel-control-prev-icon(aria-hidden='true')
-							span.sr-only Previous
-					a.carousel-control-next(href='#honors19' role='button' data-slide='next')
-							span.carousel-control-next-icon(aria-hidden='true')
-							span.sr-only Next
+		.carousel-inner
+			- let j = 1;
+			while j < 14
+				.carousel-item(class=j === 1 ? "active" : "")
+					img.d-block.w-100(src=`../images/photos/mock/${j++}.jpg` alt='Mock Trial')
 
-			h3 SJCOE Mock Trial
-			#mock.carousel.slide.mb-5(data-ride='carousel')
-					.carousel-inner
-							- let j = 1;
-							while j < 14
-									.carousel-item(class=j === 1 ? "active" : "")
-											img.d-block.w-100(src=`../images/photos/mock/${j++}.jpg` alt='Mock Trial')
+		button.carousel-control-prev(type="button" data-bs-target="#mock" data-bs-slide="prev")
+			span.carousel-control-prev-icon(aria-hidden="true")
+			span.visually-hidden Previous
+		button.carousel-control-next(role="button" data-bs-target="#mock" data-bs-slide="next")
+			span.carousel-control-next-icon(aria-hidden="true")
+			span.visually-hidden Next
 
-					a.carousel-control-prev(href='#mock' role='button' data-slide='prev')
-							span.carousel-control-prev-icon(aria-hidden='true')
-							span.sr-only Previous
-					a.carousel-control-next(href='#mock' role='button' data-slide='next')
-							span.carousel-control-next-icon(aria-hidden='true')
-							span.sr-only Next
+	h3 SJCOE Tech Summit
+	#tech.carousel.slide.mb-5
+		.carousel-indicators
+			- let ti = 0;
+			while ti < 13
+				button(type="button" class=ti === 0 ? "active" : "" data-bs-target="#mock" data-bs-slide-to=`${ti}` aria-label=`Tech Slide ${ti + 1}`)
+				- ti++
 
-			h3 SJCOE Tech Summit
-			#tech.carousel.slide.mb-5(data-ride='carousel')
-					.carousel-inner
-							- let t = 1;
-							while t < 14
-									.carousel-item(class=t === 1 ? "active" : "")
-											img.d-block.w-100(src=`../images/photos/tech/${t++}.jpg` alt='Mock Trial')
+		.carousel-inner
+			- let t = 1;
+			while t < 14
+				.carousel-item(class=t === 1 ? "active" : "")
+					img.d-block.w-100(src=`../images/photos/tech/${t++}.jpg` alt='Mock Trial')
 
-					a.carousel-control-prev(href='#tech' role='button' data-slide='prev')
-							span.carousel-control-prev-icon(aria-hidden='true')
-							span.sr-only Previous
-					a.carousel-control-next(href='#tech' role='button' data-slide='next')
-							span.carousel-control-next-icon(aria-hidden='true')
-							span.sr-only Next
+			button.carousel-control-prev(type="button" data-bs-target="#tech" data-bs-slide="prev")
+				span.carousel-control-prev-icon(aria-hidden="true")
+				span.visually-hidden Previous
+			button.carousel-control-next(role="button" data-bs-target="#tech" data-bs-slide="next")
+				span.carousel-control-next-icon(aria-hidden="true")
+				span.visually-hidden Next
+
+	script(src="bootstrap/dist/js/bootstrap.bundle.min.js")
