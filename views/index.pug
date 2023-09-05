@@ -5,24 +5,143 @@ html(lang="en")
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
 		meta(http-equiv='X-UA-Compatible' content='ie=edge')
 
-		link(rel="stylesheet" href="https://use.typekit.net/jty6luf.css")
 		link(rel="stylesheet" href="style.css")
 		title rocafoliort
 
 	body
-		.d-flex.flex-direction-column.h-100
-			main
+		main
+			.w-100.text-center
+				a.link-underline.link-underline-opacity-0(href="/")
+					h1 rocafoliort
+			.container-fluid
 				block main
-					.container-fluid.bg-secondary.h-100.text-light
-						.row.h-100.align-items-center.justify-content-center
-							.col-12.text-center
-								h1.mb-5 Under Construction
-								a(href="//instagram.com/joannerocaf" target="instagram" aria-label="Joanne's Instagram")
-									i.fa.fa-2x.fa-instagram
-								a.mx-4(href="//linkedin.com/in/joannerocaf" target="linkedin" aria-label="Joanne's LinkedIn")
-									i.fa.fa-2x.fa-linkedin
-								a(href="//twitter.com/rocafortjo" target="twitter" aria-label="Joanne's Twitter")
-									i.fa.fa-2x.fa-twitter-square
-								p.mt-3 &copy; #{new Date().getFullYear()}
+					.row
+						.col-12.mb-1
+							p
+								| 👋🏽 Hello, I’m Joanne! I’m a product designer with
+								strong &nbsp;8 years of design experience.&nbsp;
+								| I’m a problem solver, I’m always curious and
+								| I am a 5-star rice eater! 🍚
+						.col.pe-4
+							img.img-fluid(src="images/joanne.png" alt="Joanne's photo")
+						.col-8.pt-1
+							p
+								| 🖼️ I am currently a
+								strong
+									| &nbsp;Senior Product Designer and Product Marketing Manager at
+									| Promenade Group Inc.&nbsp;
+								| I lead design initiatives and product marketing for in-store
+								| transactions & e-commerce experiences for small businesses in the
+								| restaurants, pet stores, butchers and floral industries.
+							p
+								| ☀️ I work closely with product management, engineering, customer
+								| care, marketing and implementation teams in my day-to-day process.
+								| I believe that&nbsp;
+								strong
+									| it’s only good design if it has successfully improved
+									| someone’s life.
 
-			script(type="module" src="browser.js")
+					hr
+
+					.row
+						.col-12
+							h2 case studies
+
+						.col-5
+							h3 Reinventing the Shop Page
+							p
+								em Promenade for Restaurants, 2022
+							p
+								button.d-inline-flex.align-items-center
+									img(src="images/pizza.svg" width="23")
+									| &nbsp;Read on
+
+						.col-7
+							img.img-fluid(src="images/promenade-restaurants.png")
+
+						hr.my-4
+
+						.col-7
+							h3
+								| Redesigning a decade old system to step back and focus
+								| on its primary goal: collaboration
+							p
+								em BeyondSST, 2019-2022
+							p
+								button.d-inline-flex.align-items-center
+									img(src="images/school.svg" width="23")
+									| &nbsp;Read on
+
+						.col-5
+							img.img-fluid(src="images/beyondsst.png")
+
+						hr.my-4
+
+						.col-7
+							h3 Building a Point-of-Sale System for small businesses
+							p
+								em Promenade for Pet Stores & Butchers, 2022-2023
+							p
+								button.d-inline-flex.align-items-center
+									img(src="images/cat.svg" width="23")
+									| &nbsp;Read on
+
+						.col-5
+							img.img-fluid(src="images/promenade-pet-stores-butchers.png")
+
+						hr.my-4
+
+						.col-7
+							h3 Supporting sell-by-weight products on the POS
+							p
+								em Promenade for Butchers, 2023
+							p
+								button.d-inline-flex.align-items-center
+									img(src="images/poultry.svg" width="23")
+									| &nbsp;Read on
+
+						.col-5
+							img.img-fluid(src="images/promenade-restaurants.png")
+
+					hr
+
+					.row
+						.col-12
+							h2 more about me
+							p
+								| 🕰️ I was previously a #[strong UI/UX Specialist at CodeStack, SJCOE]
+								| for almost #[strong 6 years] - designing solutions to complex
+								| problems in educational systems, web and mobile apps for teachers
+								| and school personnel in education and government agencies.
+							p
+								| 🏫 I graduated with a bachelor’s degree in #[strong Multimedia Arts]
+								| at De La Salle-College of Saint Benilde in Manila, Philippines.
+							p
+								| 🗺️ I am now based in the #[strong 209 area of California]
+								| - about an hour outside of San Francisco.
+							p
+								| 🐷 This is the part where it gets #[strong really] personal.
+								| I love rice. I once received a recommendation letter saying that
+								| i have a #[strong “sunny disposition”] and that I am a
+								| #[strong “snazzy dresser”]. My ex-colleagues from DB said I look
+								| like #[strong Sadness from Inside Out but I’m the happy version.]
+
+					hr
+
+					.row.mb-5
+						.col-12
+							h2 reach out!
+							p 💌 : #[a(href="mailto:jmsrocaf@gmail.com") jmsrocaf@gmail.com]
+							p 🔗 :&nbsp;
+								a(
+									href="https://www.linkedin.com/in/joannerocaf/"
+									target="_blank"
+									rel="noopener noreferrer"
+								) LinkedIn @joannerocaf
+
+					hr
+
+				footer.d-flex.justify-content-evenly.mt-5
+					a.link-underline.link-underline-opacity-0.link-underline-opacity-75-hover(href="/graphic") graphics/layout
+					a.link-underline.link-underline-opacity-0.link-underline-opacity-75-hover(href="/uiux") ui/ux design
+					a.link-underline.link-underline-opacity-0.link-underline-opacity-75-hover(href="/photos") photos

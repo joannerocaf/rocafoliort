@@ -1,5 +1,5 @@
 {
-	"Content-Security-Policy": "default-src 'self' https://*.typekit.net; data:;",
+	"Content-Security-Policy": "default-src 'self' data:;",
 	"Feature-Policy": "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; encrypted-media 'none'; fullscreen 'self'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'self'; payment 'none'; picture-in-picture 'self'; speaker 'none'; sync-xhr 'none'; usb 'none'; vr 'none';",
 	"Referrer-Policy": "no-referrer",
 	"X-Content-Type-Options": "nosniff",
