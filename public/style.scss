@@ -1,14 +1,25 @@
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
 $fa-font-path: './font-awesome/fonts';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../node_modules/font-awesome/scss/font-awesome.scss';
-@import 'styles/base/module';
-@import 'styles/components/module';
+
+@font-face {
+	font-family: 'alika';
+	src: url('alika.woff2');
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'alika';
+}
+
+h1 {
+	color: rgb(8, 85, 227);
+	font-size: 9.2rem;
+	margin-bottom: 0;
+}
+
+h2 {
+	color: rgb(182, 29, 132);
+	font-size: 4.6rem;
+}
