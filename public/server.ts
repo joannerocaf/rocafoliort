@@ -50,13 +50,14 @@ express()
 	})
 	.get('/', (_, res) => res.render('index'))
 	.get('/about', (_, res) => res.render('about'))
-	.get('/contact', (_, res) => res.render('contact'))
 	.get('/graphic', (_, res) => res.render('graphic'))
-	.get('/landing', (_, res) => res.render('landing'))
 	.get('/links', (_, res) => res.render('links'))
 	.get('/photos', (_, res) => res.render('photos'))
 	.get('/uiux', (_, res) => res.render('uiux'))
 	.get('/private', (_, res) => res.redirect(PORTFOLIO_URL))
+	.get('/case-studies/promenade', (_, res) =>
+		res.render('case-studies/promenade'),
+	)
 	.get('/login', (_, res) => res.render('login'))
 	.post('/login', (req, res) => {
 		if (req.body.password === PASSWORD) {
