@@ -37,45 +37,32 @@ main {
 	}
 }
 
-h1,
-h2 {
-	font-family: 'magritte';
-}
-
 h1 {
-	color: rgb(8, 85, 227);
-	font-size: 7.7rem;
-	margin-bottom: 0.8rem;
+	&.magritte {
+		color: rgb(8, 85, 227);
+		font-family: 'magritte';
+		font-size: 7.7rem;
+		margin-bottom: 0.8rem;
 
-	@include media-breakpoint-down(md) {
-		font-size: 6.5rem;
-	}
-	@include media-breakpoint-down(sm) {
-		font-size: 3.5rem;
-		margin-bottom: 1.5rem;
+		@include media-breakpoint-down(md) {
+			font-size: 6.5rem;
+		}
+		@include media-breakpoint-down(sm) {
+			font-size: 3.5rem;
+			margin-bottom: 1.5rem;
+		}
 	}
 }
 
 h2 {
-	color: rgb(182, 29, 132);
-	font-size: 3.6rem;
-	margin-bottom: 2.3rem;
-	@include media-breakpoint-down(sm) {
-		font-size: 2.3rem;
-	}
-}
-
-h3 {
-	font-size: 1.25rem;
-}
-
-ul {
-	list-style: none;
-	padding-left: 0;
-
-	li {
-		line-height: 1.5rem;
-		font-weight: bold;
+	&.magritte {
+		color: rgb(182, 29, 132);
+		font-family: 'magritte';
+		font-size: 3.6rem;
+		margin-bottom: 2.3rem;
+		@include media-breakpoint-down(sm) {
+			font-size: 2.3rem;
+		}
 	}
 }
 

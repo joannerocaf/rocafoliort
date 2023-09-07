@@ -12,7 +12,7 @@ html(lang="en")
 		main
 			.w-100.text-center
 				a.link-underline.link-underline-opacity-0(href="/")
-					h1 rocafoliort
+					h1.magritte rocafoliort
 			.container-fluid
 				block main
 					.row
@@ -45,14 +45,28 @@ html(lang="en")
 
 					.row
 						.col-12
-							h2 case studies
+							h2.magritte case studies
+
+						.col-7
+							h3 Building a Point-of-Sale System for small businesses
+							p
+								em Promenade, 2022-2023
+							p
+								a.btn.btn-light.d-inline-flex.align-items-center(href="/case-studies/promenade")
+									img(src="images/cat.svg" width="23")
+									| &nbsp;Read on
+
+						.col-5
+							img.img-fluid(src="images/promenade.png")
+
+						hr.my-4
 
 						.col-5
 							h3 Reinventing the Shop Page
 							p
 								em Promenade for Restaurants, 2022
 							p
-								button.d-inline-flex.align-items-center
+								a.btn.btn-light.d-inline-flex.align-items-center(href="/case-studies/promenade-restaurants")
 									img(src="images/pizza.svg" width="23")
 									| &nbsp;Read on
 
@@ -68,46 +82,18 @@ html(lang="en")
 							p
 								em BeyondSST, 2019-2022
 							p
-								button.d-inline-flex.align-items-center
+								a.btn.btn-light.d-inline-flex.align-items-center(href="/case-studies/beyondsst")
 									img(src="images/school.svg" width="23")
 									| &nbsp;Read on
 
 						.col-5
 							img.img-fluid(src="images/beyondsst.png")
 
-						hr.my-4
-
-						.col-7
-							h3 Building a Point-of-Sale System for small businesses
-							p
-								em Promenade for Pet Stores & Butchers, 2022-2023
-							p
-								button.d-inline-flex.align-items-center
-									img(src="images/cat.svg" width="23")
-									| &nbsp;Read on
-
-						.col-5
-							img.img-fluid(src="images/promenade-pet-stores-butchers.png")
-
-						hr.my-4
-
-						.col-7
-							h3 Supporting sell-by-weight products on the POS
-							p
-								em Promenade for Butchers, 2023
-							p
-								button.d-inline-flex.align-items-center
-									img(src="images/poultry.svg" width="23")
-									| &nbsp;Read on
-
-						.col-5
-							img.img-fluid(src="images/promenade-restaurants.png")
-
 					hr
 
 					.row
 						.col-12
-							h2 more about me
+							h2.magritte more about me
 							p
 								| 🕰️ I was previously a #[strong UI/UX Specialist at CodeStack, SJCOE]
 								| for almost #[strong 6 years] - designing solutions to complex
@@ -130,7 +116,7 @@ html(lang="en")
 
 					.row.mb-5
 						.col-12
-							h2 reach out!
+							h2.magritte reach out!
 							p 💌 : #[a(href="mailto:jmsrocaf@gmail.com") jmsrocaf@gmail.com]
 							p 🔗 :&nbsp;
 								a(
@@ -140,9 +126,3 @@ html(lang="en")
 								) LinkedIn @joannerocaf
 
 					hr
-
-				block footer
-					footer.d-flex.justify-content-evenly.mt-5
-						a.link-underline.link-underline-opacity-0.link-underline-opacity-75-hover(href="/graphic") graphics/layout
-						a.link-underline.link-underline-opacity-0.link-underline-opacity-75-hover(href="/uiux") ui/ux design
-						a.link-underline.link-underline-opacity-0.link-underline-opacity-75-hover(href="/photos") photos
