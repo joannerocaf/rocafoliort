@@ -16,7 +16,8 @@ block main
 			| problems we are solving with this redesign. We must give the success to our
 			| student success teams!
 
-	img.img-fluid.mb-5(src="case-studies/beyondsst/cover.png")
+	.row.g-0.my-5
+		img.img-fluid(src="case-studies/beyondsst/cover.png")
 
 	.container-fluid
 		dl.row.mb-4
@@ -65,9 +66,27 @@ block main
 					| than improving it.
 
 
-				img.img-fluid.my-3(src="case-studies/beyondsst/old-1.png")
-				img.img-fluid.my-3(src="case-studies/beyondsst/old-2.png")
-				img.img-fluid.my-3(src="case-studies/beyondsst/old-3.png")
+				h4 Old Design
+				#beyondsst-old.carousel.carousel-fade.slide.mb-5(data-bs-theme="dark")
+					.carousel-indicators
+						button.active(type="button" data-bs-target="#beyondsst-old" data-bs-slide-to="0" aria-label="BeyondSST Old 1")
+						button(type="button" data-bs-target="#beyondsst-old" data-bs-slide-to="1" aria-label="BeyondSST Old 2")
+						button(type="button" data-bs-target="#beyondsst-old" data-bs-slide-to="2" aria-label="BeyondSST Old 3")
+
+					.carousel-inner
+						.carousel-item.active
+							img.img-fluid(src="case-studies/beyondsst/old-1.png" alt="BeyondSST Old 1")
+						.carousel-item
+							img.img-fluid(src="case-studies/beyondsst/old-2.png" alt="BeyondSST Old 2")
+						.carousel-item
+							img.img-fluid(src="case-studies/beyondsst/old-3.png" alt="BeyondSST Old 3")
+
+						button.carousel-control-prev(type="button" data-bs-target="#beyondsst-old" data-bs-slide="prev")
+							span.carousel-control-prev-icon(aria-hidden="true")
+							span.visually-hidden Previous
+						button.carousel-control-next(role="button" data-bs-target="#beyondsst-old" data-bs-slide="next")
+							span.carousel-control-next-icon(aria-hidden="true")
+							span.visually-hidden Next
 
 				h3 Goals
 
@@ -180,23 +199,23 @@ block main
 			.col-12
 				h3 Ideation (sticky notes)
 				h4 The basic “easy-to-use, user-friendly”
-			.col-md-3
+			.col-md-3.col-sm-6
 				img.img-fluid(src="case-studies/beyondsst/sticky-note-1.png")
-			.col-md-3
+			.col-md-3.col-sm-6
 				img.img-fluid(src="case-studies/beyondsst/sticky-note-2.png")
-			.col-md-3
+			.col-md-3.col-sm-6
 				img.img-fluid(src="case-studies/beyondsst/sticky-note-3.png")
-			.col-md-3
+			.col-md-3.col-sm-6
 				img.img-fluid(src="case-studies/beyondsst/sticky-note-4.png")
 			.col-12
 				h4 In-depth focus on collaboration between stakeholders
-			.col-md-3
+			.col-md-3.col-sm-6
 				img.img-fluid(src="case-studies/beyondsst/sticky-note-5.png")
-			.col-md-3
+			.col-md-3.col-sm-6
 				img.img-fluid(src="case-studies/beyondsst/sticky-note-6.png")
-			.col-md-3
+			.col-md-3.col-sm-6
 				img.img-fluid(src="case-studies/beyondsst/sticky-note-7.png")
-			.col-md-3
+			.col-md-3.col-sm-6
 				img.img-fluid(src="case-studies/beyondsst/sticky-note-8.png")
 
 		.row.mb-4
@@ -296,3 +315,5 @@ block main
 					li Seeing the audiences’ smiles as we announce and demo the redesign was fullfiling
 					li Working and cross-functioning with user support team, software developers and project managers were smooth as it can be, and the reason why we were able to implement most of the ideas. Involving them from early on made it a collaboration, rather than a “fight” for design to have a seat at the table
 					li Wish I was able to deep-dive through each form and redesign them for better usability and readability
+
+	script(src="bootstrap/dist/js/bootstrap.bundle.min.js")

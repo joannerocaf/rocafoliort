@@ -1,13 +1,4 @@
-$gray: #373737;
-$dark-blue: #314b69;
-$blue: #77a1d3;
-$mint: #79cbca;
-$pink: #e684ae;
-$salmon: #f8c6bf;
-
-.mint {
-	color: $mint;
-}
+$blue: rgb(8, 85, 227);
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
@@ -37,9 +28,13 @@ main {
 	}
 }
 
+hr {
+	color: #aaa;
+}
+
 h1 {
 	&.magritte {
-		color: rgb(8, 85, 227);
+		color: $blue;
 		font-family: 'magritte';
 		font-size: 7.7rem;
 		margin-bottom: 0.8rem;
@@ -56,7 +51,6 @@ h1 {
 
 h2 {
 	&.magritte {
-		color: rgb(182, 29, 132);
 		font-family: 'magritte';
 		font-size: 3.6rem;
 		margin-bottom: 2.3rem;
@@ -66,22 +60,14 @@ h2 {
 	}
 }
 
+h2,
+h3 {
+	color: rgb(182, 29, 132);
+}
+
 .row {
 	+ hr {
 		@extend .my-5;
-	}
-}
-
-.btn-primary {
-	background-color: $dark-blue;
-	border-radius: 0;
-	border: 0px;
-	padding: 10px 20px;
-	font-weight: 700;
-
-	&:hover {
-		background-color: $salmon;
-		color: $dark-blue;
 	}
 }
 

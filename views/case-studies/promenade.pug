@@ -7,7 +7,8 @@ block main
 		small
 			em 2022-2023
 
-	img.img-fluid.my-5(src="case-studies/promenade/cover.png")
+	.row.g-0.my-5
+		img.img-fluid(src="case-studies/promenade/cover.png")
 
 	.container-fluid
 		dl.row.mb-4
@@ -31,7 +32,7 @@ block main
 
 			.col-12
 				h3.my-4 Discovery & Research
-				h4 Store visits and interviews takeaways
+				h4.h5 Store visits and interviews takeaways
 				ul.ps-4.mt-3
 					li
 						strong Manual Operations:&nbsp;
@@ -79,10 +80,10 @@ block main
 						| flexibility and enhances customer satisfaction across all age groups.
 
 			.col-12
-				h4.my-4 Defining scope for MVP
-			.col-md-6
+				h4.h5.my-4 Defining scope for MVP
+			.col-12
 				img.img-fluid(src="case-studies/promenade/defining-scope-mvp.png")
-			.col-md-6
+			.col-12
 				p
 					| To accommodate diverse verticals like butchers, pet stores, and alcohol
 					| retailers, we're prioritizing features that are applicable to all. These
@@ -90,14 +91,15 @@ block main
 					| support various payment methods, ensuring a seamless checkout experience
 					| for all businesses.
 			.col-12
-				h4.my-5 Fleshing out the flow and deciding which parts are out of scope
+				h4.h5.my-5 Fleshing out the flow and deciding which parts are out of scope
 
-	img.img-fluid(src="case-studies/promenade/fleshing-out-flow.png")
+	.row.g-0
+		img.img-fluid(src="case-studies/promenade/fleshing-out-flow.png")
 
 	.container-fluid
 		.row
 			.col-12.mt-5
-				h4 User Personas
+				h3 User Personas
 				p
 					| One of our product managers, Vicki, crafted these 3 user personas informed
 					| by multiple rounds of interviews. These personas provide valuable insights
@@ -107,7 +109,7 @@ block main
 			.col-md-4.mb-4
 				img.img-fluid(src="case-studies/promenade/user-persona-1.png")
 			.col
-				h5 Old School POS User
+				h4 Old School POS User
 				ul
 					li I just want to focus on making sales and doing good business.
 					li I am not into fancy POS features - as long as it works, it works.
@@ -118,7 +120,7 @@ block main
 			.col-md-4.mb-4
 				img.img-fluid(src="case-studies/promenade/user-persona-2.png")
 			.col
-				h5 POS Ecosystem Folk
+				h4 POS Ecosystem Folk
 				ul
 					li I care a lot about operational efficiency and the POS I choose must have everything that I need and want.
 					li I must be completely blown away by the POS features.
@@ -128,13 +130,13 @@ block main
 			.col-md-4.mb-4
 				img.img-fluid(src="case-studies/promenade/user-persona-3.png")
 			.col
-				h5 POS Data Stickler
+				h4 POS Data Stickler
 				ul
 					li I find data to be extremely valuable information for my business, and appreciate a POS that allows me to analyze all kinds of data on my own.
 					li I enjoy the business I am in, that’s why I’m in it; I would want a POS that catered to my niche.
 
 		.row
-			h4 Problems
+			h3 Problems
 			ol.ps-5
 				li
 					strong Limited Technological Integration:&nbsp;
@@ -159,7 +161,7 @@ block main
 
 		.row
 			.col-12
-				h4.mt-4 Design Goal
+				h3.mt-4 Design Goal
 				p
 					| I aimed to create an in-store transaction experience that is not only
 					| seamless but also highly efficient, enabling our partners to process
@@ -168,231 +170,243 @@ block main
 					| increased revenue generation.
 
 			.col-12
-				h4.mt-4 Features
+				h3.mt-4 Features
 
-	img.img-fluid(src="case-studies/promenade/features-flow.png")
+	.row.justify-content-center.mb-5.g-0
+		img.img-fluid(src="case-studies/promenade/features-flow.png")
+
+		.col-md-3
+			h4.h5.mt-4.mb-3 Cart Features
+			ul
+				li
+					strong Effortless Product Addition:
+					ul
+						li
+							| Barcode Scan: Streamlined addition by scanning UPC barcodes,
+							| automatically adding recognized products to the cart.
+						li
+							| Product Catalog Search: Seamlessly add items from the product
+							| catalog.
+						li
+							| Custom Item Addition: Easily create and price custom items
+							| on-the-fly using the "Add custom" button.
+		.col-md-3
+			video.w-100(src="case-studies/promenade/effortless-product-addition.mov" autoplay loop muted title="Effortless product addition")
+
+	.row.justify-content-center.mb-5.g-0
+		.col-md-3
+			ul
+				li
+					strong Editing Quantity:
+					ul
+						li Edit item quantities within the cart to avoid repetitive scanning.
+				li
+					strong Removing Products:
+					ul
+						li
+							| Individual Removal: Remove specific items by tapping on the "X"
+							| icon next to their thumbnail.
+						li
+							| Clearing the Cart: Easily clear the entire cart with a
+							| confirmation pop-up.
+				li
+					strong Transparent Pricing displays:
+					ul
+						li
+							| Subtotal: Displays the cart's total amount before tax.
+						li
+							| Tax: Shows the applicable tax percentage and the calculated tax
+							| amount based on the store location.
+						li
+							| Grand Total: Presents the final cart amount, including tax
+							| calculations.
+
+
+		.col-md-3
+			video.w-100(src="case-studies/promenade/removing-products.mov" autoplay loop muted title="Removing products")
+
+	.row.justify-content-center.mb-5.g-0
+		.col-md-3
+			h4.h5 Product Catalog
+			ul
+				li
+					strong Filtering Products:
+					ul
+						li
+							| Users can filter products with ease using text-based search and
+							| category selection.
+				li
+					strong Textbox Search:
+					ul
+						li
+							| Users can enter product details like name, brand, UPC, and SKU
+							| for quick and precise results.
+
+				li
+					strong Category Selection:
+					ul
+						li
+							| A category filter narrows down the catalog to a specific product
+							| category.
+
+				li
+					strong Combined Filtering:
+					ul
+						li
+							| Users can search for specific keywords within a chosen category,
+							| allowing for targeted product exploration.
+
+				li
+					strong Add to Cart:
+					ul
+						li
+							| Users can effortlessly add simple products to their cart using
+							| the "Add to Cart" button.
+
+				li
+					strong Variant Products Modal:
+					ul
+						li
+							| For items with multiple variants, users can easily select their
+							| preferred option via the "Select Variants..." button. A modal
+							| presents all available choices, with the selected variant's price
+							| clearly displayed for quick reference before adding to the cart.
+		.col-md-3
+			video.w-100(
+				src="case-studies/promenade/product-catalog.mov"
+				title="Product catalog"
+				autoplay
+				loop
+				muted
+			)
+
+	.row.justify-content-center.mb-5.g-0
+		.col-md-3
+			h4.h5 Payment Experience
+			ul
+				li
+					strong Checkout:
+					ul
+						li
+							| Users can initiate the checkout process by selecting the
+							| "Charge" button after adding all desired items to their cart.
+							| A user-friendly modal communicates that printing the receipt
+							| may not be possible if the printer is offline or experiencing
+							| issues. Users have the option to proceed or wait until the
+							| printer is back online.
+				li
+					strong Cash Payment:
+					ul
+						li
+							| When users opt for cash payment, they must enter an amount
+							| equal to or greater than the grand total of their cart. Once
+							| the payment is processed, the system automatically calculates
+							| change if applicable, and the cash register opens, ensuring a
+							| smooth transaction.
+				li
+					strong Card Payment:
+					ul
+						li
+							| For card payments, customers have various options to interact
+							| with the card reader, including swiping, tapping, or inserting
+							| their card. The process is designed for simplicity and
+							| convenience.
+				li
+					strong Tipping:
+					ul
+						li
+							| At the conclusion of the card reader transaction, customers are
+							| prompted to add an optional tip.
+		.col-md-3
+			video.w-100(
+				src="case-studies/promenade/payment-experience.mov"
+				title="Payment experience"
+				autoplay
+				loop
+				muted
+			)
+
+
+	.row.justify-content-center.g-0
+		.col-md-3
+			h4.h5 Flexible Receipt Options
+			p
+				| Following payment processing, customers are presented with the option
+				| to tailor their receipt delivery method to their preference.
+			ul
+				li
+					strong No Receipt:
+					ul
+						li
+							| For customers who do not require a receipt, this choice ensures
+							| a quick and hassle-free checkout experience.
+		.col-md-3
+			img.img-fluid(src="case-studies/promenade/receipt-options-1.png")
+
+	.row.justify-content-center.mt-3.g-0
+		.col-md-3
+			ul
+				li
+					strong Printed Receipt:
+					ul
+						li
+							| Users can opt for a traditional printed receipt, facilitating
+							| physical record-keeping and documentation.
+						li
+							| Designed through&nbsp;
+							a(
+								href="https://star-document-markup-designer.smcs.site/main/index#designer"
+								target="_blank"
+								rel="noopener noreferrer"
+							) Star Document Markup Designer
+		.col-md-3
+			img.img-fluid(src="case-studies/promenade/receipt-options-2.png")
+
+	.row.justify-content-center.mt-3.g-0
+		.col-md-3
+			ul
+				li
+					strong Email Receipt:
+					ul
+						li
+							| Those who prefer digital records can enter their email address
+							| to receive a receipt conveniently via email.
+				li
+					strong SMS/Text Receipt:
+					ul
+						li
+							| Customers seeking instant access to their transaction details
+							| can opt to receive a receipt through SMS/Text by providing
+							| their phone number.
+		.col-md-3
+			img.img-fluid(src="case-studies/promenade/receipt-options-3.png")
 
 	.container-fluid
-		.row
+		.row.mt-4
 			.col-12
-				h5.mt-4.mb-3 Cart Features
-			.col-md-6
-				ul
-					li
-						strong Effortless Product Addition:
-						ul
-							li
-								| Barcode Scan: Streamlined addition by scanning UPC barcodes,
-								| automatically adding recognized products to the cart.
-							li
-								| Product Catalog Search: Seamlessly add items from the product
-								| catalog.
-							li
-								| Custom Item Addition: Easily create and price custom items
-								| on-the-fly using the "Add custom" button.
-			.col-md-6
-				video.w-100(src="case-studies/promenade/effortless-product-addition.mov" autoplay loop muted title="Effortless product addition")
+				h3 Quick Tour
+				video.w-100(
+					src="case-studies/promenade/quick-tour.mp4"
+					title="Quick tour"
+					controls
+				)
 
+		.row.mt-4
 			.col-12
-				ul
-					li
-						strong Editing Quantity:
-						ul
-							li Edit item quantities within the cart to avoid repetitive scanning.
-
-			.col-md-6
-				ul
-					li
-						strong Removing Products:
-						ul
-							li
-								| Individual Removal: Remove specific items by tapping on the "X"
-								| icon next to their thumbnail.
-							li
-								| Clearing the Cart: Easily clear the entire cart with a
-								| confirmation pop-up.
-			.col-md-6
-				video.w-100(src="case-studies/promenade/removing-products.mov" autoplay loop muted title="Removing products")
-
-			.col-12
-				ul
-					li
-						strong Transparent Pricing displays:
-						ul
-							li
-								| Subtotal: Displays the cart's total amount before tax.
-							li
-								| Tax: Shows the applicable tax percentage and the calculated tax
-								| amount based on the store location.
-							li
-								| Grand Total: Presents the final cart amount, including tax
-								| calculations.
-
-			.col-12
-				h5 Product Catalog
-				video.w-100(src="case-studies/promenade/product-catalog.mov" autoplay loop muted title="Product catalog")
-				ul
-					li
-						strong Filtering Products:
-						ul
-							li
-								| Users can filter products with ease using text-based search and
-								| category selection.
-					li
-						strong Textbox Search:
-						ul
-							li
-								| Users can enter product details like name, brand, UPC, and SKU
-								| for quick and precise results.
-
-					li
-						strong Category Selection:
-						ul
-							li
-								| A category filter narrows down the catalog to a specific product
-								| category.
-
-					li
-						strong Combined Filtering:
-						ul
-							li
-								| Users can search for specific keywords within a chosen category,
-								| allowing for targeted product exploration.
-
-					li
-						strong Add to Cart:
-						ul
-							li
-								| Users can effortlessly add simple products to their cart using
-								| the "Add to Cart" button.
-
-					li
-						strong Variant Products Modal:
-						ul
-							li
-								| For items with multiple variants, users can easily select their
-								| preferred option via the "Select Variants..." button. A modal
-								| presents all available choices, with the selected variant's price
-								| clearly displayed for quick reference before adding to the cart.
-
-
-			.col-12
-				h5 Payment Experience
-				video.w-100(src="case-studies/promenade/payment-experience.mov" autoplay loop muted title="Payment experience")
-
-				ul
-					li
-						strong Checkout:
-						ul
-							li
-								| Users can initiate the checkout process by selecting the
-								| "Charge" button after adding all desired items to their cart.
-								| A user-friendly modal communicates that printing the receipt
-								| may not be possible if the printer is offline or experiencing
-								| issues. Users have the option to proceed or wait until the
-								| printer is back online.
-					li
-						strong Cash Payment:
-						ul
-							li
-								| When users opt for cash payment, they must enter an amount
-								| equal to or greater than the grand total of their cart. Once
-								| the payment is processed, the system automatically calculates
-								| change if applicable, and the cash register opens, ensuring a
-								| smooth transaction.
-					li
-						strong Card Payment:
-						ul
-							li
-								| For card payments, customers have various options to interact
-								| with the card reader, including swiping, tapping, or inserting
-								| their card. The process is designed for simplicity and
-								| convenience.
-					li
-						strong Tipping:
-						ul
-							li
-								| At the conclusion of the card reader transaction, customers are
-								| prompted to add an optional tip.
-
-			.col-12
-				h5 Flexible Receipt Options
-
-			.row.align-items-center.mt-3
-				.col-md-6
-					p
-						| Following payment processing, customers are presented with the option
-						| to tailor their receipt delivery method to their preference.
-					ul
-						li
-							strong No Receipt:
-							ul
-								li
-									| For customers who do not require a receipt, this choice ensures
-									| a quick and hassle-free checkout experience.
-				.col-md-6
-					img.img-fluid(src="case-studies/promenade/receipt-options-1.png")
-
-			.row.align-items-center.mt-3
-				.col-md-6
-					ul
-						li
-							strong Printed Receipt:
-							ul
-								li
-									| Users can opt for a traditional printed receipt, facilitating
-									| physical record-keeping and documentation.
-								li
-									| Designed through&nbsp;
-									a(
-										href="https://star-document-markup-designer.smcs.site/main/index#designer"
-										target="_blank"
-										rel="noopener noreferrer"
-									) Star Document Markup Designer
-				.col-md-6
-					img.img-fluid(src="case-studies/promenade/receipt-options-2.png")
-
-			.row.align-items-center.mt-3
-				.col-md-6
-					ul
-						li
-							strong Email Receipt:
-							ul
-								li
-									| Those who prefer digital records can enter their email address
-									| to receive a receipt conveniently via email.
-						li
-							strong SMS/Text Receipt:
-							ul
-								li
-									| Customers seeking instant access to their transaction details
-									| can opt to receive a receipt through SMS/Text by providing
-									| their phone number.
-				.col-md-6
-					img.img-fluid(src="case-studies/promenade/receipt-options-3.png")
-
-
-			.row.mt-4
-				.col-12
-					h3 Quick Tour
-					video.w-100(src="case-studies/promenade/quick-tour.mp4" title="Quick tour")
-
-			.row.mt-4
-				.col-12
-					h3 Outcome
-					p
-						| Although the project's development was successfully completed, it has
-						| temporarily undergone a soft launch phase due to a company-wide
-						| restructure. A few select partners have shown interest and have been
-						| using the solution in their workflows. While it hasn't been released
-						| for public sale just yet, this early adoption by key stakeholders
-						| underscores the strong potential and positive impact of the project
-						| in addressing their specific needs.
-					p
-						| Here’s the&nbsp;
-						a(
-							href="https://help.pets.getpromenade.com/point-of-sale"
-							target="_blank"
-							rel="noopener noreferrer"
-						) Help Center Guide
-						| &nbsp;I put together for this project.
+				h3 Outcome
+				p
+					| Although the project's development was successfully completed, it has
+					| temporarily undergone a soft launch phase due to a company-wide
+					| restructure. A few select partners have shown interest and have been
+					| using the solution in their workflows. While it hasn't been released
+					| for public sale just yet, this early adoption by key stakeholders
+					| underscores the strong potential and positive impact of the project
+					| in addressing their specific needs.
+				p
+					| Here’s the&nbsp;
+					a(
+						href="https://help.pets.getpromenade.com/point-of-sale"
+						target="_blank"
+						rel="noopener noreferrer"
+					) Help Center Guide
+					| &nbsp;I put together for this project.

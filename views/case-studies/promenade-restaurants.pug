@@ -7,7 +7,8 @@ block main
 		small
 			em 2022
 
-	img.img-fluid.my-5(src="case-studies/promenade-restaurants/cover.png")
+	.row.g-0.my-5
+		img.img-fluid(src="case-studies/promenade-restaurants/cover.jpg")
 
 	.container-fluid
 		dl.row.mb-4
@@ -37,8 +38,8 @@ block main
 					| This redesign will tackle some of the pages at the storefront for better
 					| usability, experience and tie-in with the new managed menu system.
 
-	.row.mx-3
-		.col-6
+	.row.justify-content-center.g-0.mx-5
+		.col-md-6
 			h3 Problems
 			ol
 				li
@@ -68,78 +69,87 @@ block main
 					| back to the homepage rather than aiding in their journey through the
 					| website.
 
-		.col-6
+
+	.row.justify-content-center.g-0.mx-5
+		.col-md-6
 			img.img-fluid(src="case-studies/promenade-restaurants/problems.png")
 
-		.col-6
+	.row.justify-content-center.g-0.mx-5
+		.col-md-6
 			h3 Ideation
 			img.img-fluid(src="case-studies/promenade-restaurants/ideation-1.png")
-		.col-6
+		.col-md-6
 			img.img-fluid(src="case-studies/promenade-restaurants/ideation-2.png")
 
-	.container-fluid
-		.row
-			.col-12
-				h3 Features
-			.col-12
-				p
-					| 🌟 #[strong Streamlined Navigation:] Our one-page shop features sidebar
-					| category links that allow for smooth scrolling to your desired section,
-					| making product discovery a breeze.
-			.col-12
-				video.w-100.mb-5(
-					src="case-studies/promenade-restaurants/navigation.mov"
-					title="Streamlined navigation"
-					autoplay loop muted
-				)
-			.col-12
-				p
-					| 🛒 #[strong Instant Cart Addition:] When items require no configurations,
-					| you can now instantly add them to your cart, saving you valuable time and
-					| simplifying your shopping journey.
-			.col-12
-				video.w-100.mb-5(
-					src="case-studies/promenade-restaurants/instant-add.mov"
-					title="Instant cart addition"
-					autoplay loop muted
-				)
-			.col-12
-				p
-					| 🪄 #[strong Effortless Product Exploration:] Explore products with ease!
-					| Our product details modal lets you dive deeper into a specific item
-					| without losing your browsing progress. Configure customizations seamlessly
-					| before adding to your cart, all while staying on the shop page to discover
-					| more items.
-				p
-					| 🍕 #[strong Revamped Pizza Customizations:] Redesigned pizza customizations
-					| offer a visual delight. Choose from half-left, half-right, or whole portions
-					| for your favorite toppings, ensuring your pizza is just the way you like it.
-			.col-12
-				video.w-100.mb-5(
-					src="case-studies/promenade-restaurants/pdp.mov"
-					title="Effortless product exploration & revamped pizza customizations"
-					autoplay loop muted
-				)
-			.col-12
-				p
-					| 🛒 #[strong Accessible Cart:] Say goodbye to separate cart pages. Our
-					| cart now resides as a convenient right-hand side sliding sidebar,
-					| providing quick and easy access while you shop.
-				p
-					| 🚀 #[strong Smart Upselling:] Before checkout, our upsell page entices
-					| you with complementary items, allowing for last-minute cart additions to
-					| enhance your shopping experience.
-				p
-					| 🛠️ #[strong Cart Control:] Editing your cart is a breeze. Easily adjust
-					| item quantities, make additions, or revisit the product details modal to
-					| fine-tune configurations and customizations.
-			.col-12
-				video.w-100.mb-5(
-					src="case-studies/promenade-restaurants/checkout-upsell.mov"
-					title="Accessible cart, smart upselling & cart control"
-					autoplay loop muted
-				)
+	.row.justify-content-center.g-0
+		.col-lg-5
+			h3 Features
+			p
+				| 🌟 #[strong Streamlined Navigation:] Our one-page shop features sidebar
+				| category links that allow for smooth scrolling to your desired section,
+				| making product discovery a breeze.
+	.row.justify-content-center.g-0
+		.col-lg-5
+			video.w-100.mb-5(
+				src="case-studies/promenade-restaurants/navigation.mov"
+				title="Streamlined navigation"
+				autoplay loop muted
+			)
+	.row.justify-content-center.g-0
+		.col-lg-5
+			p
+				| 🛒 #[strong Instant Cart Addition:] When items require no configurations,
+				| you can now instantly add them to your cart, saving you valuable time and
+				| simplifying your shopping journey.
+	.row.justify-content-center.g-0
+		.col-lg-5
+			video.w-100.mb-5(
+				src="case-studies/promenade-restaurants/instant-add.mov"
+				title="Instant cart addition"
+				autoplay loop muted
+			)
+	.row.justify-content-center.g-0
+		.col-lg-5
+			p
+				| 🪄 #[strong Effortless Product Exploration:] Explore products with ease!
+				| Our product details modal lets you dive deeper into a specific item
+				| without losing your browsing progress. Configure customizations seamlessly
+				| before adding to your cart, all while staying on the shop page to discover
+				| more items.
+			p
+				| 🍕 #[strong Revamped Pizza Customizations:] Redesigned pizza customizations
+				| offer a visual delight. Choose from half-left, half-right, or whole portions
+				| for your favorite toppings, ensuring your pizza is just the way you like it.
+	.row.justify-content-center.g-0
+		.col-lg-5
+			video.w-100.mb-5(
+				src="case-studies/promenade-restaurants/pdp.mov"
+				title="Effortless product exploration & revamped pizza customizations"
+				autoplay loop muted
+			)
+	.row.justify-content-center.g-0
+		.col-lg-5
+			p
+				| 🛒 #[strong Accessible Cart:] Say goodbye to separate cart pages. Our
+				| cart now resides as a convenient right-hand side sliding sidebar,
+				| providing quick and easy access while you shop.
+			p
+				| 🚀 #[strong Smart Upselling:] Before checkout, our upsell page entices
+				| you with complementary items, allowing for last-minute cart additions to
+				| enhance your shopping experience.
+			p
+				| 🛠️ #[strong Cart Control:] Editing your cart is a breeze. Easily adjust
+				| item quantities, make additions, or revisit the product details modal to
+				| fine-tune configurations and customizations.
+	.row.justify-content-center.g-0
+		.col-lg-5
+			video.w-100.mb-5(
+				src="case-studies/promenade-restaurants/checkout-upsell.mov"
+				title="Accessible cart, smart upselling & cart control"
+				autoplay loop muted
+			)
 
+	.container-fluid
 		.row.mt-4
 			.col-12
 				h3 Impact
