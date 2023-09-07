@@ -1,102 +1,107 @@
 extends ../index
 
 block main
-	h2.mt-5
-		strong Building a Point-of-Sale system for small businesses (Promenade)
-	small
-		em 2022-2023
+	.container-fluid
+		h2.mt-5
+			strong Building a Point-of-Sale system for small businesses (Promenade)
+		small
+			em 2022-2023
 
 	img.img-fluid.my-5(src="case-studies/promenade/cover.png")
 
-	dl.row.mb-4
-		.col-6
-			dt.h3 My Role
-			dd Discovery & Research, UX and UI Design (Figma)
-		.col-6
-			dt.h3 The Team
-			dd 2 Product Managers, Engineering Manager, 4 Engineers, Designer
+	.container-fluid
+		dl.row.mb-4
+			.col-6
+				dt.h3 My Role
+				dd Discovery & Research, UX and UI Design (Figma)
+			.col-6
+				dt.h3 The Team
+				dd 2 Product Managers, Engineering Manager, 4 Engineers, Designer
 
-	.row
-		.col-12
-			p
-				| In this case study, we focus on the “Create Order” in our Point of Sale
-				| (POS) system's MVP. We are trying to position Promenade as the go-to
-				| solution in our chosen market. This feature, central to our POS system,
-				| plays a vital role in enabling vendors to efficiently create and process
-				| orders, adding significant value to our offering. Its successful
-				| development is pivotal to our sales enablement, business growth, and
-				| strategic positioning objectives.
+		.row
+			.col-12
+				p
+					| In this case study, we focus on the “Create Order” in our Point of Sale
+					| (POS) system's MVP. We are trying to position Promenade as the go-to
+					| solution in our chosen market. This feature, central to our POS system,
+					| plays a vital role in enabling vendors to efficiently create and process
+					| orders, adding significant value to our offering. Its successful
+					| development is pivotal to our sales enablement, business growth, and
+					| strategic positioning objectives.
 
-		.col-12
-			h3.my-4 Discovery & Research
-			h4 Store visits and interviews takeaways
-			ul.ps-4.mt-3
-				li
-					strong Manual Operations:&nbsp;
-					| A lot of stores currently rely on manual processes for inventory
-					| management and checkout procedures, including the application of price
-					| stickers and manual price input at the checkout counter.
-				li
-					strong Non-Catalog Sales:&nbsp;
-					| Stores have a practice of offering items and services that are not
-					| listed in their standard catalog. This flexibility allows them to cater
-					| to diverse customer needs, but it also creates challenges in terms of
-					| inventory management and pricing consistency.
-				li
-					strong Cash Payments Support:&nbsp;
-					| Our research has revealed a critical need for integrating cash payment
-					| capabilities into our POS system. 40% of customers rely on cash for
-					| transactions. Failing to accommodate this preference could lead to
-					| customer frustration and potential loss of business.
-				li
-					strong Cash Register Integration:&nbsp;
-					| Because of the discovery point above, we found the need for our system
-					| to be integrated with a cash register to support processing of cash
-					| payments.
-				li
-					strong Barcode Scanner Integration:&nbsp;
-					| Based on store visits and competitor analysis, a barcode scanner is
-					| essential for any POS system, as it caters to the needs of our target
-					| partners in the pet store and beverage industries. These partners
-					| heavily rely on SKUs and barcodes for their products, necessitating
-					| seamless integration for efficient operations.
-				li
-					strong Digital Receipts:&nbsp;
-					| We've observed a growing preference for digital receipts, particularly
-					| through email and text messages. To adapt to this, our POS system
-					| should offer convenient options for customers to receive their purchase
-					| confirmations and records through these channels, enhancing their
-					| overall shopping experience.
-				li
-					strong Printed Receipts:&nbsp;
-					| While many customers prefer digital receipts, it's important to note
-					| that a significant segment, particularly the older demographic, still
-					| values printed receipts. To ensure inclusivity and meet diverse customer
-					| preferences, our POS system should continue to support the generation of
-					| printed receipts alongside digital options. This approach maintains
-					| flexibility and enhances customer satisfaction across all age groups.
+			.col-12
+				h3.my-4 Discovery & Research
+				h4 Store visits and interviews takeaways
+				ul.ps-4.mt-3
+					li
+						strong Manual Operations:&nbsp;
+						| A lot of stores currently rely on manual processes for inventory
+						| management and checkout procedures, including the application of price
+						| stickers and manual price input at the checkout counter.
+					li
+						strong Non-Catalog Sales:&nbsp;
+						| Stores have a practice of offering items and services that are not
+						| listed in their standard catalog. This flexibility allows them to cater
+						| to diverse customer needs, but it also creates challenges in terms of
+						| inventory management and pricing consistency.
+					li
+						strong Cash Payments Support:&nbsp;
+						| Our research has revealed a critical need for integrating cash payment
+						| capabilities into our POS system. 40% of customers rely on cash for
+						| transactions. Failing to accommodate this preference could lead to
+						| customer frustration and potential loss of business.
+					li
+						strong Cash Register Integration:&nbsp;
+						| Because of the discovery point above, we found the need for our system
+						| to be integrated with a cash register to support processing of cash
+						| payments.
+					li
+						strong Barcode Scanner Integration:&nbsp;
+						| Based on store visits and competitor analysis, a barcode scanner is
+						| essential for any POS system, as it caters to the needs of our target
+						| partners in the pet store and beverage industries. These partners
+						| heavily rely on SKUs and barcodes for their products, necessitating
+						| seamless integration for efficient operations.
+					li
+						strong Digital Receipts:&nbsp;
+						| We've observed a growing preference for digital receipts, particularly
+						| through email and text messages. To adapt to this, our POS system
+						| should offer convenient options for customers to receive their purchase
+						| confirmations and records through these channels, enhancing their
+						| overall shopping experience.
+					li
+						strong Printed Receipts:&nbsp;
+						| While many customers prefer digital receipts, it's important to note
+						| that a significant segment, particularly the older demographic, still
+						| values printed receipts. To ensure inclusivity and meet diverse customer
+						| preferences, our POS system should continue to support the generation of
+						| printed receipts alongside digital options. This approach maintains
+						| flexibility and enhances customer satisfaction across all age groups.
 
-		.col-12
-			h4.my-4 Defining scope for MVP
-		.col-md-6
-			img.img-fluid(src="case-studies/promenade/defining-scope-mvp.png")
-		.col-md-6
-			p
-				| To accommodate diverse verticals like butchers, pet stores, and alcohol
-				| retailers, we're prioritizing features that are applicable to all. These
-				| will simplify inventory management, adapt to unique pricing needs, and
-				| support various payment methods, ensuring a seamless checkout experience
-				| for all businesses.
-		.col-12
-			h4.my-5 Fleshing out the flow and deciding which parts are out of scope
-			img.img-fluid(src="case-studies/promenade/fleshing-out-flow.png")
+			.col-12
+				h4.my-4 Defining scope for MVP
+			.col-md-6
+				img.img-fluid(src="case-studies/promenade/defining-scope-mvp.png")
+			.col-md-6
+				p
+					| To accommodate diverse verticals like butchers, pet stores, and alcohol
+					| retailers, we're prioritizing features that are applicable to all. These
+					| will simplify inventory management, adapt to unique pricing needs, and
+					| support various payment methods, ensuring a seamless checkout experience
+					| for all businesses.
+			.col-12
+				h4.my-5 Fleshing out the flow and deciding which parts are out of scope
 
-		.col-12.mt-5
-			h4 User Personas
-			p
-				| One of our product managers, Vicki, crafted these 3 user personas informed
-				| by multiple rounds of interviews. These personas provide valuable insights
-				| into our users' needs and preferences, guiding our product development.
+	img.img-fluid(src="case-studies/promenade/fleshing-out-flow.png")
+
+	.container-fluid
+		.row
+			.col-12.mt-5
+				h4 User Personas
+				p
+					| One of our product managers, Vicki, crafted these 3 user personas informed
+					| by multiple rounds of interviews. These personas provide valuable insights
+					| into our users' needs and preferences, guiding our product development.
 
 		.row.align-items-center.my-2
 			.col-md-4.mb-4
@@ -164,9 +169,13 @@ block main
 
 			.col-12
 				h4.mt-4 Features
-				img.img-fluid(src="case-studies/promenade/features-flow.png")
-				h5.mt-4.mb-3 Cart Features
 
+	img.img-fluid(src="case-studies/promenade/features-flow.png")
+
+	.container-fluid
+		.row
+			.col-12
+				h5.mt-4.mb-3 Cart Features
 			.col-md-6
 				ul
 					li
@@ -365,12 +374,12 @@ block main
 
 			.row.mt-4
 				.col-12
-					h4 Quick Tour
-					video.w-100(src="case-studies/promenade/effortless-product-addition.mov" title="Quick tour")
+					h3 Quick Tour
+					video.w-100(src="case-studies/promenade/quick-tour.mp4" title="Quick tour")
 
 			.row.mt-4
 				.col-12
-					h4 Outcome
+					h3 Outcome
 					p
 						| Although the project's development was successfully completed, it has
 						| temporarily undergone a soft launch phase due to a company-wide
@@ -379,3 +388,11 @@ block main
 						| for public sale just yet, this early adoption by key stakeholders
 						| underscores the strong potential and positive impact of the project
 						| in addressing their specific needs.
+					p
+						| Here’s the&nbsp;
+						a(
+							href="https://help.pets.getpromenade.com/point-of-sale"
+							target="_blank"
+							rel="noopener noreferrer"
+						) Help Center Guide
+						| &nbsp;I put together for this project.

@@ -10,20 +10,20 @@ html(lang="en")
 
 	body
 		main
-			.w-100.text-center
-				a.link-underline.link-underline-opacity-0(href="/")
-					h1.magritte rocafoliort
-			.container-fluid
-				block main
-					.row
-						.col-12.mb-1
+			a.link-underline.link-underline-opacity-0(href="/")
+				h1.magritte.text-center rocafoliort
+			block main
+				.container
+					.row.justify-content-center
+						.col-lg-8.mb-1
 							p
 								| 👋🏽 Hello, I’m Joanne! I’m a #[strong product designer] with
 								strong &nbsp;8 years of design experience.&nbsp;
 								| I’m a problem solver, always curious and a 5-star rice eater! 🍚
-						.col.pe-4
+					.row.justify-content-center
+						.col-lg-3.pe-4.mb-4
 							img.img-fluid(src="images/joanne.png" alt="Joanne's photo")
-						.col-8.pt-1
+						.col-lg-5.pt-1
 							p
 								| 🖼️ I am currently a
 								strong
@@ -40,14 +40,17 @@ html(lang="en")
 								strong
 									| it’s only good design if it has successfully improved
 									| someone’s life.
+						.col-lg-8.my-4
+							hr
 
-					hr
-
-					.row
-						.col-12
+					.row.justify-content-center
+						.col-md-11
 							h2.magritte case studies
 
-						.col-md-5
+					.row.justify-content-center
+						.col-md-7.order-md-last.mb-md-0.mb-4
+							img.img-fluid(src="case-studies/promenade/cover.png")
+						.col-md-4
 							h3.h5 Building a Point-of-Sale System for small businesses
 							p
 								em Promenade, 2022-2023
@@ -56,12 +59,14 @@ html(lang="en")
 									img(src="images/cat.svg" width="23")
 									| &nbsp;Read on
 
-						.col-md-7
-							img.img-fluid(src="case-studies/promenade/cover.png")
+					.row.justify-content-center.my-4
+						.col-md-8
+							hr
 
-						hr.my-4
-
-						.col-md-5
+					.row.justify-content-center
+						.col-md-7.order-md-last.mb-md-0.mb-4
+							img.img-fluid(src="case-studies/promenade-restaurants/cover.png")
+						.col-md-4
 							h3.h5 Reinventing the Shop Page
 							p
 								em Promenade for Restaurants, 2022
@@ -70,12 +75,14 @@ html(lang="en")
 									img(src="images/pizza.svg" width="23")
 									| &nbsp;Read on
 
-						.col-md-7
-							img.img-fluid(src="case-studies/promenade-restaurants/cover.png")
+					.row.justify-content-center.my-4
+						.col-md-8
+							hr
 
-						hr.my-4
-
-						.col-md-5
+					.row.justify-content-center
+						.col-md-7.order-md-last.mb-md-0.mb-4
+							img.img-fluid(src="case-studies/beyondsst/cover.png")
+						.col-md-4
 							h3.h5
 								| Redesigning a decade old system to step back and focus
 								| on its primary goal: collaboration
@@ -86,13 +93,12 @@ html(lang="en")
 									img(src="images/school.svg" width="23")
 									| &nbsp;Read on
 
-						.col-md-7
-							img.img-fluid(src="case-studies/beyondsst/cover.png")
+					.row.justify-content-center.my-4
+						.col-md-8
+							hr
 
-					hr
-
-					.row
-						.col-12
+					.row.justify-content-center
+						.col-8
 							h2.magritte more about me
 							p
 								| 🕰️ I was previously a #[strong UI/UX Specialist at CodeStack, SJCOE]
@@ -113,10 +119,10 @@ html(lang="en")
 								| like #[strong Sadness] from Inside Out but I’m the
 								| #[strong happy version.]
 
-					hr
+							hr.my-5
 
-					.row.mb-5
-						.col-12
+					.row.justify-content-center
+						.col-8
 							h2.magritte reach out!
 							p 💌 : #[a(href="mailto:jmsrocaf@gmail.com") jmsrocaf@gmail.com]
 							p 🔗 :&nbsp;
@@ -126,4 +132,4 @@ html(lang="en")
 									rel="noopener noreferrer"
 								) LinkedIn @joannerocaf
 
-					hr
+							hr.my-5
