@@ -58,6 +58,12 @@ express()
 	.get('/case-studies/promenade', (_, res) =>
 		res.render('case-studies/promenade'),
 	)
+	.get('/case-studies/promenade-restaurants', (_, res) =>
+		res.render('case-studies/promenade-restaurants'),
+	)
+	.get('/case-studies/beyondsst', (_, res) =>
+		res.render('case-studies/beyondsst'),
+	)
 	.get('/login', (_, res) => res.render('login'))
 	.post('/login', (req, res) => {
 		if (req.body.password === PASSWORD) {

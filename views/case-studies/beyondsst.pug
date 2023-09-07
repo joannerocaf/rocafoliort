@@ -1,9 +1,296 @@
 extends ../index
 
 block main
-	h3
+	h2
 		strong
 			| Redesigning a decade old system to step back and focus on its primary goal:
 			| collaboration (BeyondSST)
 	small
 		em 2019-2021
+
+	p
+		| The worst is when people no longer wanted to use your system because it has
+		| become countereffective in terms of providing convenience and streamlining
+		| different processes for stakeholders. Conflicts and frustrations are the
+		| problems we are solving with this redesign. We must give the success to our
+		| student success teams!
+
+	img.img-fluid.my-5(src="case-studies/beyondsst/beyondsst.png")
+
+	dl.row.mb-4
+		.col-6
+			dt.h3 My Role
+			dd Discovery & Research, UX and UI Design (Figma)
+		.col-6
+			dt.h3 The Team
+			dd Product Manager, Engineering Manager, 2 Engineers, SDET, Designer
+
+	.row
+		.col-12
+			h3 Context
+			img.img-fluid(src="case-studies/beyondsst/transition.png")
+			p
+				| The original aim was to transition lengthy paper evaluation forms for
+				| teachers into a digital web format, but the system encountered challenges
+				| in terms of convincing people to use it as the paper format didn't
+				| seamlessly translate into a user-friendly digital experience.
+
+	.row
+		.col-12
+			h3 Problems
+
+			img(src="case-studies/beyondsst/thumbs-down.png")
+			h4 “No thanks, we’d rather go back to paper forms”
+			p
+				| The system was built with the goal of converting paper forms for student
+				| intervention plans into web forms. Over the years, new features were added
+				| on top of each other without regard for design and user flows. As a result,
+				| BeyondSST became a complicated system that people no longer wanted to use.
+				| Instead of providing convenience, users were willing to just go back to
+				| using paper forms if it meant that they did not have to deal with
+				| difficulties that came with “technology.”
+
+			img(src="case-studies/beyondsst/frown.png")
+			h4 Created conflicts instead of promoting collaborations
+			p
+				| Forming student success teams and student intervention plans rely heavily
+				| on collaboration between teachers, administrators and other school staff
+				| members. The system did not allow multiple people editing and/or filling
+				| out the web forms at the same time. Furthermore, once a stakeholder fills
+				| out the form, the next individual to edit can make direct changes to the
+				| previous person’s work on the same form, creating conflict and confusion
+				| between all members of the team. The system reduced efficiency, rather
+				| than improving it.
+
+
+			img.img-fluid.my-3(src="case-studies/beyondsst/old-1.png")
+			img.img-fluid.my-3(src="case-studies/beyondsst/old-2.png")
+			img.img-fluid.my-3(src="case-studies/beyondsst/old-3.png")
+
+			h3 Goals
+
+			img(src="case-studies/beyondsst/thumbs-up.png")
+			h4 The basic “easy-to-use, user-friendly”
+			p
+				| It took too many clicks to count for a user to be able to get to a
+				| specific form from the home page after logging in. We need to streamline
+				| the navigation mapping and make sure that users can only access and see
+				| what they need to access and see. We want them to be in and out of the
+				| system as fast as possible.
+
+			img(src="case-studies/beyondsst/smile.png")
+			h4 In-depth focus on collaboration between stakeholders
+			p
+				| We need to redesign the forms to show collaboration rather than creating
+				| conflicting versions of the same form. We want members of the student
+				| success teams to be able to work on the forms at any given time, without
+				| the risk of deleting or altering another person’s work.
+
+			h3 Designer Responsibilities
+			ul
+				li
+					| Work with the user support team to gather user data, feedback,
+					| information, stories
+				li
+					| Define problems and user pain points, set goals and formulate user
+					| personas
+				li
+					| Ideate and conceptualize informed design solutions (involving project
+					| manager, user support team and software engineers from the early stages
+					| for validation)
+				li
+					| Prototype design solutions and features to life
+				li
+					| Present prototypes by phase to the team & directors for approval
+				li
+					| Work with software engineers and the rest of the team in implementing
+					| user work flows & features
+
+	.row
+		.col-12
+			h3 User Personas
+
+		.col-md-2
+			img.img-fluid(src="case-studies/beyondsst/user-persona-1.png")
+		.col-md-10
+			h4 Marlo, 27
+			h5 Math Teacher
+			p
+				| Marlo transferred to a new school district where they use BeyondSST for
+				| student intervention plans. She is struggling to use BeyondSST because
+				| she gets lost while navigation through the system.
+			p
+				| What motivates her—  She is motivated to learn new things fast to get up
+				| to speed as a new Math Teacher in the school.
+			p
+				| What she needs—  She needs an easy-to-learn and use system that will help
+				| her get set on her new teaching position ASAP.
+		.col-md-2
+			img.img-fluid(src="case-studies/beyondsst/user-persona-2.png")
+		.col-md-10
+			h4 Regine, 41
+			h5 Homeroom Advisor
+			p
+				| Regine has been teaching at this school for about 20 years. She has
+				| watched technology take over her day-to-day responsibilities as a teacher
+				| and homeroom advisor. She’s been trying to use BeyondSST for years since
+				| it was introduced, but the attempts always ended in frustration, so she
+				| just goes back to using paper forms until she is told to try BeyondSST
+				| again.
+			p
+				| What motivates her—  Her love for teaching and setting her students on
+				| the right path.
+			p
+				| What she needs— A system that will introduce efficiency and not
+				| frustration.
+		.col-md-2
+			img.img-fluid(src="case-studies/beyondsst/user-persona-3.png")
+		.col-md-10
+			h4 John, 55
+			h5 Principal
+			p
+				| John, our principal, is continously finding ways for his teachers and
+				| staff to be provided with the best resources. He is a witness over the
+				| years as to how paper forms are hard to keep track of.
+			p
+				| What motivates him— His desire for his school to always be
+				| up-with-the-times in terms of technology and resources.
+			p
+				| What he needs— A way to keep track of student intervention plans of all
+				| his teachers for all their students over the course of multiple school
+				| years.
+		.col-md-2
+			img.img-fluid(src="case-studies/beyondsst/user-persona-4.png")
+		.col-md-10
+			h4 Lois, 36
+			h5 Guidance Counselor
+			p
+				| Lois is often a part of student intervention plans to help with plan
+				| delivery and communicating with both the student and their parents.
+			p
+				| What motivates her—  Her desire to help and smoothen out the process of
+				| making intervention plans.
+			p
+				| What she needs— To be able to communicate with the rest of the student
+				| success team without hiccups and conflicts.
+
+	.row.my-4
+		.col-12
+			h3 Ideation (sticky notes)
+			h4 The basic “easy-to-use, user-friendly”
+		.col-md-3
+			img.img-fluid(src="case-studies/beyondsst/sticky-note-1.png")
+		.col-md-3
+			img.img-fluid(src="case-studies/beyondsst/sticky-note-2.png")
+		.col-md-3
+			img.img-fluid(src="case-studies/beyondsst/sticky-note-3.png")
+		.col-md-3
+			img.img-fluid(src="case-studies/beyondsst/sticky-note-4.png")
+		.col-12
+			h4 In-depth focus on collaboration between stakeholders
+		.col-md-3
+			img.img-fluid(src="case-studies/beyondsst/sticky-note-5.png")
+		.col-md-3
+			img.img-fluid(src="case-studies/beyondsst/sticky-note-6.png")
+		.col-md-3
+			img.img-fluid(src="case-studies/beyondsst/sticky-note-7.png")
+		.col-md-3
+			img.img-fluid(src="case-studies/beyondsst/sticky-note-8.png")
+
+	.row.mb-4
+		.col-12
+			h3 Prototyping
+			img.img-fluid(src="case-studies/beyondsst/prototyping.png")
+
+	.row
+		.col-12
+			h3 Features
+
+			h4 Let’s get them in and out ASAP
+			p
+				| As soon as a user logs in, they see what they need to do and where
+				| exactly to go in the system to have the tasks done. The faster it is for
+				| them to be able to finish their work and log out, the better.
+
+			h4 Productivity Tracker
+			p
+				| Admins are able to see important statistics and progress in this dashboard.
+
+			img.img-fluid.mb-3(src="case-studies/beyondsst/productivity.png")
+
+			h4 Focused navigation bar
+			p
+				| Teachers log in to BeyondSST to work on intervention plans for their
+				| students. When they log in, the list of students is the first thing they
+				| want to see. The navigation bar highlights just that.
+			p
+				| Before the redesign, users were able to see everything on their navigation
+				| bar regardless of their user type. For example, they are able to see
+				| navigational items that are only for administrators. When they try to
+				| access these pages, they just see an “access denied” page.
+
+			img.img-fluid.mb-3(src="case-studies/beyondsst/access-denied.png")
+
+			h4 Form sidebar straight from the students list
+			p
+				| No more multiple clicks to get to the form that needs to be worked on.
+			p
+				| Before the redesign, one had to click through multiple views to get to
+				| the list of forms per student.
+
+			img.img-fluid.mt-3(src="case-studies/beyondsst/bad-flow.png")
+			img.img-fluid.mb-3(src="case-studies/beyondsst/good-flow.png")
+
+			h4 Forms accessible at any time
+			p
+				| Success team members no longer need to get locked out of a form while
+				| waiting for another member to finish working. Everyone can now access the
+				| forms any time they want to and more!
+
+			h4 Collaboration display
+			p
+				| Members can only touch their own work. This will remove the risk of
+				| conflict within the forms, but they are able to see other member’s
+				| answers without being able to edit them. Think endorsements at LinkedIn.
+				| They will see number of votes and they can choose to upvote selected
+				| intervention methods, and/or add more.
+
+			img.img-fluid.my-3(src="case-studies/beyondsst/collaboration.png")
+
+	.row
+		.col-12
+			h3 Impact
+			h4 Since the redesign was announced at the CodeStack Conference 2021…
+
+	dl.row
+		.col-4
+			dt 23% ⬆️
+			dd new districts & schools across California
+		.col-4
+			dt 183
+			dd total districts
+		.col-4
+			dt 892
+			dd total schools
+
+	.row
+		.col-6
+			p #[strong 23] new districts live
+			p #[strong 13] new districts in implementation stage
+			p #[strong 5] new districts in Board of Education approval stage
+		.col-6
+			p #[strong 2 regions] in talks to onboard (Lassen & Shasta SELPAs)
+			p
+				| Back-to-back demos & webinar trainings on the new design for
+				| #[strong hundreds of old & new users]
+
+	.row
+		.col-12
+			h3 Reflections
+			ul
+				li Deep-diving with a fresh perspective, without bias or prior knowledge
+				li Would have loved to be more immersed in the user’s point-of-view
+				li A whole system redesign was very overwhelming at first, but easing into it was an adventure
+				li Seeing the audiences’ smiles as we announce and demo the redesign was fullfiling
+				li Working and cross-functioning with user support team, software developers and project managers were smooth as it can be, and the reason why we were able to implement most of the ideas. Involving them from early on made it a collaboration, rather than a “fight” for design to have a seat at the table
+				li Wish I was able to deep-dive through each form and redesign them for better usability and readability
