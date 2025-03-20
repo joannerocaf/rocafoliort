@@ -58,12 +58,20 @@ express()
 	.get('/beyondsst/showcase', (_, res) =>
 		res.render('beyondsst/showcase'),
 	)
+	.get('/beyondsst/case-study', (_, res) =>
+		res.render('beyondsst/case-study', { showcaseLink: '/beyondsst/showcase' }),
+	)
 	.get('/promenade/showcase', (_, res) =>
 		res.render('promenade/showcase'),
+	)
+	.get('/promenade/case-study', (_, res) =>
+		res.render('promenade/case-study'),
 	)
 	.get('/caps/showcase', (_, res) =>
 		res.render('caps/showcase'),
 	)
+	.get('/caps/case-study', (_, res) =>
+		res.render('caps/case-study'),
 	)
 	.get('/login', (_, res) => res.render('login'))
 	.post('/login', (req, res) => {
