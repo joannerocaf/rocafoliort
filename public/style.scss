@@ -1,11 +1,11 @@
-@use '../node_modules/bootstrap/scss/bootstrap.scss' with (
-	$enable-negative-margins: true,
-	$font-family-sans-serif: "Inter",
-	$primary: #0855E3,
-	$danger: #B71D84,
-);
-
 @use 'fonts/inter';
+
+$enable-negative-margins: true;
+$font-family-sans-serif: "Inter";
+$primary: #0855E3;
+$danger: #B71D84;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 body {
 	@extend .container;
@@ -13,7 +13,11 @@ body {
 	background-image: url(images/wavy-bg.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	padding: 3.2rem 5rem;
+	padding: 3.2rem 0;
+
+	@include media-breakpoint-down(sm) {
+		padding: 3.2rem 2.3rem;
+	}
 }
 
 h2 {
