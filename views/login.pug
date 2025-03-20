@@ -1,8 +1,27 @@
-extends index
+doctype html
+html(lang="en")
+	head
+		base(href="/")
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
 
-block main
-	.container-fluid
-		form.text-center(action="/login" method="post")
-			label.form-label(for="password") Please enter the password
-			input.form-control(id="password" type="password" name="password")
-			input.btn.btn-light.mt-3(type="submit")
+		link(rel="stylesheet" href="style.css")
+		title rocafoliort
+
+	body
+		nav
+			block nav
+				.navbar.d-flex.justify-content-center
+					a.navbar-brand(href="/")
+						em ROCA#[strong FOLIO]RT
+
+		main
+			.row.justify-content-center
+				.col-lg-5.col-md-8
+					form.text-center(action="/login" method="post")
+						label.form-label.visually-hidden(for="password") Please enter the password
+						.input-group.input-group-lg.mt-4.shadow-sm
+							span.input-group-text &#128274;
+							input.form-control(id="password" type="password" name="password")
+						input.btn.btn-outline-primary.rounded-4.mt-4.fw-bold(type="submit")
