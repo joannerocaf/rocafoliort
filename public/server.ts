@@ -9,7 +9,7 @@ import cookieParser from 'cookie-parser';
 import cookieSession from 'cookie-session';
 import express from 'express';
 
-import headers from './headers.json' assert { type: 'json' };
+import headers from './headers.json' with { type: 'json' };
 
 const PUBLIC_DIR = dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT ?? 3000);
@@ -48,7 +48,7 @@ express()
 		res.removeHeader('X-Powered-By');
 		next();
 	})
-	.get('/', (_, res) => res.render('index'))
+	.get('/', (_, res) => res.render('landing'))
 	.get('/about', (_, res) => res.render('about'))
 	.get('/graphic', (_, res) => res.render('graphic'))
 	.get('/links', (_, res) => res.render('links'))
