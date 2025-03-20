@@ -61,6 +61,9 @@ express()
 	.get('/promenade/showcase', (_, res) =>
 		res.render('promenade/showcase'),
 	)
+	.get('/caps/showcase', (_, res) =>
+		res.render('caps/showcase'),
+	)
 	)
 	.get('/login', (_, res) => res.render('login'))
 	.post('/login', (req, res) => {
