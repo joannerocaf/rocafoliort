@@ -55,11 +55,9 @@ express()
 	.get('/photos', (_, res) => res.render('photos'))
 	.get('/uiux', (_, res) => res.render('uiux'))
 	.get('/private', (_, res) => res.redirect(PORTFOLIO_URL))
-	.get('/case-studies/promenade', (_, res) =>
-		res.render('case-studies/promenade'),
+	.get('/beyondsst/showcase', (_, res) =>
+		res.render('beyondsst/showcase'),
 	)
-	.get('/case-studies/promenade-restaurants', (_, res) =>
-		res.render('case-studies/promenade-restaurants'),
 	)
 	.get('/case-studies/beyondsst', (_, res) =>
 		res.render('case-studies/beyondsst'),
