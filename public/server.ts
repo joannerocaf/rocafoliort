@@ -71,7 +71,7 @@ express()
 		res.render('caps/showcase'),
 	)
 	.get('/caps/case-study', (_, res) =>
-		res.render('caps/case-study'),
+		res.render('caps/case-study', { showcaseLink: '/caps/showcase' }),
 	)
 	.get('/login', (_, res) => res.render('login'))
 	.post('/login', (req, res) => {
