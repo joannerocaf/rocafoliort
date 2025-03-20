@@ -58,9 +58,9 @@ express()
 	.get('/beyondsst/showcase', (_, res) =>
 		res.render('beyondsst/showcase'),
 	)
+	.get('/promenade/showcase', (_, res) =>
+		res.render('promenade/showcase'),
 	)
-	.get('/case-studies/beyondsst', (_, res) =>
-		res.render('case-studies/beyondsst'),
 	)
 	.get('/login', (_, res) => res.render('login'))
 	.post('/login', (req, res) => {
