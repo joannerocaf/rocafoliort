@@ -58,9 +58,6 @@ express()
 	.get('/beyondsst/showcase', (_, res) =>
 		res.render('beyondsst/showcase'),
 	)
-	.get('/beyondsst/case-study', (_, res) =>
-		res.render('beyondsst/case-study', { showcaseLink: '/beyondsst/showcase' }),
-	)
 	.get('/promenade/showcase', (_, res) =>
 		res.render('promenade/showcase'),
 	)
