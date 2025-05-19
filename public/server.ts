@@ -31,8 +31,6 @@ express()
 			maxAge: 24 * 60 * 60 * 1000,
 		}),
 	)
-	.use(express.static(PUBLIC_DIR)) // should be the `public` directory of the project
-	.use(express.static(join(PUBLIC_DIR, '..', 'node_modules')))
 	.use((req, res, next) => {
 		if (
 			NODE_ENV === 'production' &&
@@ -40,13 +38,23 @@ express()
 		) {
 			return res.redirect(new URL(req.url, 'https://joannerocafort.com').href);
 		}
-		if (req.url !== '/login' && req.session?.authenticated !== true) {
+		if (req.session?.authenticated !== true &&
+			(
+				req.url.endsWith('.pdf') ||
+				(
+					req.url.includes('.') === false &&
+					req.url.startsWith('/login') === false
+				)
+			)
+		) {
 			return res.redirect('/login');
 		}
 		res.set(headers);
 		res.removeHeader('X-Powered-By');
 		next();
 	})
+	.use(express.static(PUBLIC_DIR)) // should be the `public` directory of the project
+	.use(express.static(join(PUBLIC_DIR, '..', 'node_modules')))
 	.get('/', (_, res) => res.render('landing'))
 	.get('/about', (_, res) => res.render('about'))
 	.get('/graphic', (_, res) => res.render('graphic'))
