@@ -17,7 +17,6 @@ const {
 	COOKIE_KEY = 'COOKIE_KEY',
 	NODE_ENV = 'development',
 	PASSWORD = 'PASSWORD',
-	PORTFOLIO_URL = '',
 } = process.env;
 
 express()
@@ -54,7 +53,6 @@ express()
 	.get('/links', (_, res) => res.render('links'))
 	.get('/photos', (_, res) => res.render('photos'))
 	.get('/uiux', (_, res) => res.render('uiux'))
-	.get('/private', (_, res) => res.redirect(PORTFOLIO_URL))
 	.get('/beyondsst/showcase', (_, res) =>
 		res.render('beyondsst/showcase'),
 	)
