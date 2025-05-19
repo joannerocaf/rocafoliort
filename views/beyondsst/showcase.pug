@@ -7,97 +7,149 @@ block main
 	small.text-primary
 		strong SHOWCASE
 	h1
-		| #[strong.text-danger Transforming the collaboration experience for Student Success Teams]
-		| (SST), resulting in a 50% increase in user adoption and a 200% boost in revenue
+		| #[strong.text-danger Empowering teachers and staff towards their students' success]
+		| , resulting in a 50% increase in user adoption and a 200% boost in revenue
 
 	small 🖥️ #[strong.text-danger BeyondSST], for CodeStack - San Joaquin Office of Education     🚀 #[strong 1 designer], 5 cross-functional team members
-
-	h2
-		strong User Problems
-
-	ul.list-unstyled
-		li 🤦‍♀️
-			span.fst-italic “I can't even find where to go, we'd rather go back to paper forms.”
-		li 😡
-			span.fst-italic “I spent hours working on my intervention plan, only for it to be overwritten by someone else!”
-		li ⌛
-			span.fst-italic “I have to wait for my other team member to finish working on the form before I can access the same form.”
-
-	h2
-		strong Solutions
-
-	.row.align-items-center.my-5
-		.col-lg-5
-			h3.text-primary
-				strong Collaboration Experience
-
-			p Success team members no longer need to get locked out of a form while waiting for another member to finish working. Everyone can now access the forms any time they want to and more!
-
-			p When filling out the form, they will see the number of votes per each of the selected intervention plan and team members can choose to upvote selected intervention methods and/or add more. They will not be able to unselect votes from other members.
-
-			p Additionally, members can only enter their inputs, they cannot overwrite other member's comments. They can view other member's comments for more context.
-		.col
-			img.img-fluid(src="images/uiux/beyondsst/showcase/1.png")
-			img.img-fluid(src="images/uiux/beyondsst/showcase/2.png")
-
-	.row.align-items-center.my-5
-		.col-lg-5.mb-3.ps-4.order-lg-last
-			h3.text-primary
-				strong Forms Sidebar straight from the Students List
-
-			p No more going through a rabbit hole just to get to the forms that need to be worked on!
-
-			img.img-fluid.ms-2(src="images/uiux/beyondsst/showcase/4.png")
-		.col
-			img.img-fluid(src="images/uiux/beyondsst/showcase/3.png")
-
-	.row.align-items-center.my-5
-		.col-lg-4
-			h3.text-primary
-				strong Focused Navigation Bar
-
-			p Everyone logs into BeyondSST to work on their students' intervention plan, so let's simplify the navigation bar and focus on exactly where they need to be.
-
-		.col
-			img.img-fluid(src="images/uiux/beyondsst/showcase/5.png")
-
-	.row.align-items-center.my-5
-		.col-lg-4.order-lg-last
-			h3.text-primary
-				strong Productivity Tracker
-
-			p Let's make this less complicated for everyone by putting everything they need to know in front of them as soon as they log in.
-
-		.col
-			img.img-fluid(src="images/uiux/beyondsst/showcase/6.png")
 
 	.row.mt-5.mb-3
 		.col-12
 			h2
-				strong Ongoing Impact
+				strong We've helped our teachers and staff to advocate for their students' success, and more!
 
 	.row.row-cols-lg-4.row-cols-2
 		.col.mb-3
 			.card.h-100.text-center.border-danger.border-dash
-				.card-body
+				.card-body.align-content-center
 					strong.fs-1.text-danger +200%
 					p increase in #[strong revenue]
 		.col.mb-3
 			.card.h-100.text-center.border-danger.border-dash
-				.card-body
+				.card-body.align-content-center
 					strong.fs-1.text-danger +50%
 					p increase in #[strong students in the system]
 
 		.col.mb-3
 			.card.h-100.text-center.border-danger.border-dash
-				.card-body
+				.card-body.align-content-center
 					strong.fs-1.text-danger +18%
 					p annual growth in #[strong adoption]
 		.col.mb-3
 			.card.h-100.text-center.border-danger.border-dash
-				.card-body
+				.card-body.align-content-center
 					strong.fs-1.text-danger +12%
 					p annual growth in #[strong students with successful intervention plans] through the system
+
+	h2.pt-5
+		strong So, why did teachers and staff struggle to adapt to the old system?
+
+	.row.my-5
+		.col-md-4.col-12
+			p.text-primary.fs-5
+				strong Navigation issues
+			p It was either impossible or time consuming to get to the student's form that a user needs to work on.
+		.col-md-4.col-12
+			p.text-primary.fs-5
+				strong Errors hindering collaboration
+			p A form was only accessible to one person at a given time and also does not have any collaboration features, failing to simulate a round table discussion virtually.
+		.col-md-4.col-12
+			p.text-primary.fs-5
+				strong Lack of version control
+			p Team members worked on the same copy of a form so inputs can be overwritten intentionally or unintentionally, without a way to revert or track changes.
+
+	h2.pt-5
+		strong Transforming their digital experience beyond paper forms
+
+	.row.align-items-center.my-5
+		.col-lg-5
+			h3.text-primary.fs-5
+				strong Collaboration Experience
+
+			ul
+				li Everyone has their own access to the forms without getting locked out.
+				li Easily upvote other team members' votes through the Quick Selection view.
+				li Voted options cannot be deselected by others.
+				li Use dropdown input to browse through all options, search for existing options or add new ones.
+
+		.col
+			img.img-fluid(src="images/uiux/beyondsst/showcase/1.png")
+
+	hr
+
+	.row.my-5
+		.col-12
+			h3.text-primary.fs-5
+				strong Dropdown States
+		.col
+			p
+				strong Browsing through existing options
+			img.img-fluid.rounded.shadow-sm(src="images/uiux/beyondsst/showcase/2.png")
+		.col
+			p
+				strong Adding custom option
+			img.img-fluid.rounded.shadow-sm(src="images/uiux/beyondsst/showcase/3.png")
+
+	hr
+
+	.row.align-items-center.my-5
+		.col-lg-4
+			h3.text-primary.fs-5
+				strong Additional Info Display
+
+			ul
+				li Team members can now read through other members' inputs without being able to overwrite them.
+				li There is a name indicator per each input so users know whose comment is which.
+
+		.col
+			img.img-fluid(src="images/uiux/beyondsst/showcase/4.png")
+
+	hr
+
+	.row.align-items-center.my-5
+		.col-lg-4
+			h3.text-primary.fs-5
+				strong Forms Library
+
+			ul
+				li Access a student form straight from the Students listing page or wherever the Student Identification component is.
+				li Look out for the red dot indicator that indicate form overdue status.
+				li Select one or more forms to download as one file.
+
+		.col
+			img.img-fluid(src="images/uiux/beyondsst/showcase/5.png")
+
+			p.ps-4.ps-lg-5
+				strong Student Identification Component
+			img.img-fluid.w-75(src="images/uiux/beyondsst/showcase/6.png")
+
+	hr
+
+	.row.align-items-center.my-5
+		.col-lg-4
+			h3.text-primary.fs-5
+				strong Focused Navigation
+
+			ul
+				li We simplified the navigation bar to focus only on places that they need to be.
+				li We want to avoid unnecessary confusion by removing navigational items that only administrators have access to, instead of letting users get there and showing them a “Access Denied” message.
+
+		.col-lg-7.offset-lg-1
+			img.img-fluid(src="images/uiux/beyondsst/showcase/7.png")
+			img.img-fluid(src="images/uiux/beyondsst/showcase/8.png")
+
+	hr
+
+	.row.align-items-center.my-5
+		.col-lg-4
+			h3.text-primary.fs-5
+				strong Dues Tracker and Stats
+
+			ul
+				li As soon as the user signs in, we want to highlight what exactly needs to be done for maximum efficiency.
+				li We also added student stats that are important to the users and the schools.
+
+		.col
+			img.img-fluid(src="images/uiux/beyondsst/showcase/9.png")
 
 	h2
 		strong Want a deeper dive?
