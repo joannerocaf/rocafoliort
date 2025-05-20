@@ -67,9 +67,6 @@ express()
 	.get('/promenade/showcase', (_, res) =>
 		res.render('promenade/showcase'),
 	)
-	.get('/promenade/case-study', (_, res) =>
-		res.render('promenade/case-study', { showcaseLink: '/promenade/showcase' }),
-	)
 	.get('/caps/showcase', (_, res) =>
 		res.render('caps/showcase'),
 	)
