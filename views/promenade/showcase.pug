@@ -7,12 +7,36 @@ block main
 	small.text-primary
 		strong SHOWCASE
 	h1
-		| #[strong.text-danger Optimizing the customer order experience], serving 42% growth in orders & revenue for our Restaurant partners
+		| #[strong.text-danger Making it easy to order food from our Restaurant partners], serving 42% growth in orders & revenue
 
 	p 🖥️ #[strong.text-danger Promenade for Restaurants], for Promenade     🚀 #[strong 1 designer], 1 product manager, 1 engineering manager, 2 engineers, 1 SDET, 1 CSA
 
+	.row.mt-5.mb-3
+		.col-12
+			h2
+				strong Our partners got more customers, less abandoned carts and revenue boost!
+
+	.row.row-cols-lg-3
+		.col.mb-3
+			.card.h-100.text-center.border-danger.border-dash
+				.card-body.align-content-center
+					strong.fs-1.text-danger +42%
+					p increase in #[strong orders] across all Restaurant Partners
+
+		.col.mb-3
+			.card.h-100.text-center.border-danger.border-dash
+				.card-body.align-content-center
+					strong.fs-1.text-danger +43%
+					p boost in #[strong GMV]
+
+		.col.mb-3
+			.card.h-100.text-center.border-danger.border-dash
+				.card-body.align-content-center
+					strong.fs-1.text-danger +25%
+					p #[strong growth] in Restaurant Partners
+
 	h2
-		strong Problems
+		strong Order volume and revenue have remained stagnant across our restaurant partners. Why?
 
 	ul
 		li Customers are dropping off without completing their orders, leading to a lower volume of orders for our restaurant partners and negatively impacting their revenue through our platform.
@@ -22,11 +46,11 @@ block main
 				li They have a hard time understanding and managing what’s in their cart due to lack of essential information
 
 	h2
-		strong Solutions
+		strong Serving effortless menu discovery and checkout
 
 	.row.align-items-center.my-5
 		.col-12
-			h3.text-primary
+			h3.text-primary.fs-5
 				strong One-Page Menu
 
 			p Our new ordering platform features sidebar category links that allow for smooth scrolling to the customer’s desired section, making menu discovery effortless for our end users.
@@ -35,8 +59,8 @@ block main
 
 	.row.align-items-center.my-5
 		.col-lg-4
-			h3.text-primary
-				strong Instant Cart Addition
+			h3.text-primary.fs-5
+				strong Instant Add to Cart
 
 			p When food items require no configurations, customers are now able to instantly add them to your cart, saving valuable time and simplifying the ordering journey.
 
@@ -45,8 +69,8 @@ block main
 
 	.row.align-items-center.my-5
 		.col-lg-4.order-lg-last
-			h3.text-primary
-				strong Product Details Modal
+			h3.text-primary.fs-5
+				strong Product Details Pop-up
 
 			p This lets the customer dive deeper into a specific item without losing their browsing progress. Configure customization and easily add food and/or beverages to cart, all while staying on the shop page to discover the rest of the menu.
 
@@ -55,37 +79,13 @@ block main
 
 	.row.align-items-center.my-5
 		.col-lg-4
-			h3.text-primary
+			h3.text-primary.fs-5
 				strong Quick Cart Access
 
 			p The cart now resides as a convenient right-hand side sliding sidebar, providing quick and easy access while browsing the menu. On the same sidebar, customers can easily adjust item quantities, make additions, or revisit the product details modal to fine-tune configurations and customization.
 
 		.col
 			img.img-fluid(src="images/uiux/promenade/showcase/4.png")
-
-	.row.mt-5.mb-3
-		.col-12
-			h2
-				strong Ongoing Impact
-
-	.row.row-cols-lg-3
-		.col.mb-3
-			.card.h-100.text-center.border-danger.border-dash
-				.card-body
-					strong.fs-1.text-danger +42%
-					p increase in #[strong orders] across all of our Restaurant partners
-
-		.col.mb-3
-			.card.h-100.text-center.border-danger.border-dash
-				.card-body
-					strong.fs-1.text-danger +43%
-					p boost in #[strong GMV]
-
-		.col.mb-3
-			.card.h-100.text-center.border-danger.border-dash
-				.card-body
-					strong.fs-1.text-danger +25%
-					p #[strong growth] in Restaurant Partners
 
 	p
 		a.btn.btn-outline-primary.rounded-4(href="/case-studies/promenade/promenade-case-study.pdf") 📄 Full Case Study
